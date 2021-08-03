@@ -2068,7 +2068,7 @@ main nav .categorias li .marcaLenovo {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #FF0000;
-    width: 400px;
+    width: 300px;
     height: 60px;
   }
   main nav .categorias li a {
