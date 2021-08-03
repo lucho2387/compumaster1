@@ -1,0 +1,24 @@
+#logoPublicidad {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                margin-bottom: 100px;
+                margin-top: 400px;
+                img {
+                    width: 100px;
+                }
+}
+
+@media only screen and (max-width: 600px) {
+    #logoPublicidad {
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 140px;
+        margin-left: 20px;
+        img {
+            margin: 5px;
+            padding: 10px;
+        }
+    }
+}
+

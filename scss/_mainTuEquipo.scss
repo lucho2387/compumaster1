@@ -1,0 +1,261 @@
+h2 {
+    text-align: center;
+	font-size: 35px;
+	color: $color--rojo; 
+	padding-top: 30px;   
+    font-family: 'Raleway', sans-serif;
+}
+
+//Main Tu Equipo
+main {
+    nav {
+        .categorias { 
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    padding: 10px;
+                    li{
+                        display: inline-block;
+                        border: 2px solid rgb(252, 1, 1);
+                        border-radius: 5px;
+                        box-shadow: 3px 3px 0px 0px rgb(2, 2, 2);
+                        padding: 20px;
+                        margin: 20px;
+                        margin-top: 46px;
+                        margin-bottom: 20px;
+                        list-style-type: none;
+                        position: relative;
+                        &:hover {
+                            height: 70px;
+                            background-color: rgb(253, 0, 0);
+                            opacity: 0.9;
+                        }
+                        a {
+                            color: black;
+                            font-size: 18px;
+                            &:hover {
+                                color: $color--blanco;
+                            }
+                        }
+                        .marcaLenovo {
+                                    margin-left: 10px;
+                                    list-style: none;
+                        }
+                    }        
+        }
+    }
+}
+
+.submenu {
+    display: none;
+}
+
+//Seccion Tu Equipo
+.contenedorMadre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 750px;
+    .contenedorProducto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        height: 450px;
+        width: 350px;
+        margin: auto;
+        margin-top: 150px;
+        .caja {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 3s;
+            border: 5px solid $color--rojo;
+            border-radius: 15px;
+            &:hover {
+                transform: rotateY(180deg);
+            }
+            .lado {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                backface-visibility: hidden;
+            }
+            .atras {
+                transform: rotateY(180deg);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                border-radius: 10px;
+                h4 {
+                    font-size: 25px;
+                    color: $color--rojo;
+                }
+                .especificacion {
+                    font-size: 20px;
+                    color: $color--blanco;
+                }
+            }
+            
+            .frente {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                .lenovoTs14 {
+                    width: 200px;
+                    height: 142px;
+                }
+                .imagenLenovo {
+                    width: 200px;
+                }
+                h3 {
+                    padding-top: 20px;
+                    font-family: sans-serif;
+                }
+                .precio {
+                    color: $color--rojo;
+                    font-weight: 700;
+                    margin: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+        .cajaColor {
+            background-color: $color--blanco;
+        }
+        
+    }
+}   
+
+@media only screen and (max-width: 600px) {
+        h2{
+            color: black;
+            text-align: center;
+        }
+        main {
+            nav {
+                .categorias {
+                            display: grid;
+                            justify-content: start;
+                            li {
+                                display: flex;
+                                flex-direction: column;
+                                background-color: $color--rojo;
+                                width: 400px;
+                                height: 60px;
+                                a {
+                                    color: $color--blanco;
+                                    text-align: center;
+                                }
+                            }
+                }
+            }
+        }
+        .contenedorMadre {
+            position: relative;
+            display: block;
+            height: auto;
+        }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+    h2{
+        color: black;
+        text-align: center;
+    }
+    .grid-container {
+        .navTuEquipo {
+            ul {
+                li {
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        main {
+            nav {
+                .categorias {
+                    display: grid;
+                    li {
+                        background-color: $color--rojo;
+                        width: 400px;
+                        a {
+                            color: $color--blanco;
+                            text-align: center;
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .contenedorMadre {
+            display: grid;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 876px) and (min-width: 769px) {
+    .grid-container {
+        header {
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        #mainArmado {
+            img {
+                width: 500px;
+                height: 300px;
+            }
+        }
+        .contenedorMadre {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+    }    
+} 
+
+@media only screen and (max-width: 1045px) and (min-width: 877px) {
+
+    .grid-container {
+        header {
+            display: flex;
+            flex-direction: column;
+            .navTuEquipo {
+                ul {
+                    li {
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }   
+        }
+        .contenedorMadre {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+    } 
+}
+
+

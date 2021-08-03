@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    text-align: center;
+    header {
+        background: rgb(94,50,50);
+        background: linear-gradient(90deg, rgba(94,50,50,1) 0%, rgba(80,80,80,1) 100%, rgba(240,50,37,1) 100%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h1 {
+            color: $color--blanco;
+            padding: 10px;
+            font-size: 30px;
+            font-family: $titulo;
+        }
+        span {
+                color: $color--rojo;
+                font-size: 40px;
+            
+            
+        }
+        nav {
+            ul {
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    padding: 20px;
+                    .submenu {
+                        display: none;
+                        position: absolute;
+                        padding-top: 5px;
+                        li {
+                            a {
+                                color: $color--rojo;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $color--blanco;
+                        font-family: $titulo;
+                        .productos {
+                            color: $color--rojo;
+                        }
+                    }
+                    
+                    //Modificadores
+                    .li--tuEquipo {
+                        color: $color--rojo;
+                    }
+                    .li--armado {
+                        color: $color--rojo;
+                    }
+                    
+                    .li--productos {
+                        color: $color--rojo;
+                    }
+                    
+                    
+                    
+                    .li--consultas {
+                        color: $color--rojo;
+                    }
+                    
+                    .li--nosotros {
+                        color: $color--rojo;
+                    }
+                }
+            }
+        }
+    } 
+    #logoPublicidad {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+        margin-top: 400px;
+        img {
+            width: 100px;
+        }
+    }
+    footer {
+        background-color: $color--rojo;
+        text-align: center;
+        padding: 10px;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(240,50,37,1) 0%, rgba(33,36,37,1) 76%);
+        p {
+            color: $color--blanco;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5px;
+            font-family: $parrafo;
+        }
+        a {
+            color: black;
+            position: relative;
+            top: 5px;
+            text-decoration: none;
+            font-family: $parrafo;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        header{
+            h1 {
+                font-size: 20px;
+                position: relative;
+                left: 150px;
+            }
+            span {
+                font-size: 25px;
+            }
+            nav {
+                ul {
+                    display: none;
+                }
+            }
+        }
+        #logoPublicidad {
+            display: block;
+            margin-bottom: 20px;
+            margin-top: 140px;
+            img {
+                margin: 5px;
+                padding: 10px;
+            }
+        }
+        footer{
+                p {
+                    font-size: 15px;
+                }
+                a {
+                    font-size: 12px;
+                }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+    .grid-container {
+        header {
+            display: flex;
+            flex-direction: column;
+            h1 {
+                font-size: 20px;
+                position: relative;
+                top: 10px;
+                
+            }
+            span {
+                font-size: 25px;
+            }
+            nav {
+                ul{
+                    li{
+                        a {
+                            font-size: 10px;
+                        }
+                    }
+                }     
+            }
+            
+        }
+        #logoPublicidad {
+            position: relative;
+            top: 240px;
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+        footer {
+            position: relative;
+            top: 180px;
+        }
+    } 
+}
+
+@media only screen and (max-width: 876px) and (min-width: 769px) {
+    .grid-container {
+        header {
+            a {
+                h1 {
+                    font-size: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                span {
+                    font-size: 40px;
+                }
+            }
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+

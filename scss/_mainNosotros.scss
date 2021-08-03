@@ -1,0 +1,143 @@
+#mainNosotros {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            color: $color--rojo;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            font-family: $titulo;
+        }
+        p {
+            display: flex;
+            flex-direction: column;
+            border: 4px solid $color--blanco;
+            width: 600px;
+            text-align: justify;
+
+        }
+}
+
+#iframe {
+    display: grid;
+    grid-template-areas: 
+    "video video parrafo parrafo"
+    ;
+    padding-bottom: 200px;
+    padding-top: 150px;
+    padding: 150px;
+    .video1 {
+        grid-area: video;
+        width: 100%;
+        padding-left: 200px;
+        padding-top: 30px;
+        iframe {
+            width: 500px;
+            height: 320px;
+            position: relative;
+            right: 100px;
+            top: 20px;
+        
+        }
+    }
+    .parrafoSecundario {
+        grid-area: parrafo;
+        text-align: center justify;
+        padding: 30px;
+        margin: 20px;
+        border: 10px solid $color--rojo;   
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #mainNosotros {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            text-align: justify;
+            width: 200px;
+        }
+    }
+    #iframe {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+    .headerNosotros {
+        nav {
+            ul {
+                li {
+                    a{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    #mainNosotros {
+            p{
+                width: 350px;
+            }
+    }
+    #iframe {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .video1 {
+            iframe {
+                position: relative;
+                left: -200px;
+                top: -120px;
+                margin: 0;
+            }
+        }
+        .parrafoSecundario {
+            width: 600px;
+            position: relative;
+            left: 150px;
+            text-align: justify;
+            top: -100px;
+            border: none;
+            height: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 876px) and (min-width: 769px) {
+    #iframe {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1200px;
+        .video1 {
+            iframe {
+                position: relative;
+                left: -170px;  
+                top: -100px; 
+            }
+        }
+        .parrafoSecundario {
+            width: 600px;
+            position: relative;
+            left: 140px;
+        }
+    }
+    #logoPublicidad {
+        img {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 80px;
+        }
+    } 
+}

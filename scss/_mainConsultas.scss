@@ -1,0 +1,52 @@
+#escribinos {
+    margin-left: 10px;
+    padding-top: 100px;
+    text-align: center;
+	font-size: 40px;
+	color: $color--rojo;
+    font-family: $titulo;
+}
+
+p {
+    margin: 20px;
+}
+
+.formularioContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+input, select {
+    display: block;
+    position: relative;
+    margin: 10px;
+    width: 290px;
+    padding: 8px;
+    color: black;
+}
+
+textarea {
+    margin: 10px;
+    padding-top: 10px;
+    width: 290px;
+}
+
+.botonEnviar {
+    background-color: black;
+    color: $color--blanco;
+}
+
+fieldset {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $parrafo;
+}
+
+.infoContacto {
+    color: $color--rojo;
+}
+
+

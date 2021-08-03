@@ -1,0 +1,129 @@
+//Variables
+$color--rojo: #FF0000;
+$color--blanco: white;
+$titulo: 'Raleway', sans-serif;
+$parrafo: 'Roboto', sans-serif;
+
+/* Clases Agregadas */
+
+
+
+.boton { 
+    border: none;
+    width: 150px;
+    height: 30px;
+    position: relative;
+    left: 0px;
+    top: -100px;
+    display: inline-block;
+    border-radius: 10px;
+  
+  }
+  
+  .boton:hover {
+     opacity: 0.8;
+  }
+  
+  .boton a:hover {
+    color: white;
+  }
+  
+  .logoPublicidad {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  
+  .redes {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+  }
+  
+  .imagenMacbook {
+    width: 225px;
+    height: 225px;
+  }
+  
+  .imagenAuricular {
+    width: 225px;
+    height: 225px;
+  }
+  
+  .navColor {
+    background-color: black;
+  }
+  
+  /* Título Compu */
+  .container-fluid .navbar-brand .tituloCompu{
+    font-size: 25px;
+    color: white;
+  }
+  
+  /* Título Master */
+  .navbar-brand span {
+    color: red;
+  }
+  /* Enlaces barra de navegación */
+  #navbarSupportedContent .navbar-nav .nav-item a{
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Enlaces del sub-menu */
+  #navbarSupportedContent .navbar-nav .nav-item .dropdown-menu li a {
+    color: black;
+    font-size: 15px;
+  }
+  
+  /* Efecto del sub-menu */
+  #navbarSupportedContent .navbar-nav .nav-item .dropdown-menu li a:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  /* Menu hamburguesa */
+  .container-fluid .navbar-toggler {
+    background-color: white;
+  }
+  
+  /* Fin */
+  
+  .boton a{
+    text-decoration: none;
+    color: white;
+  }
+
+  i {
+    font-size: 25px;
+    color: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .logoPublicidad {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+    }
+  }
+ 
+  @import "../bootstrap/scss/bootstrap";
+
+
+//Seccion General
+@import "general";
+//Seccion Armado
+@import "mainArmado";
+//Seccion Productos
+@import "mainProductos";
+//Seccion Nosotros
+@import "mainNosotros";
+//Seccion Tu Equipo
+@import "mainTuEquipo";
+//Seccion Consulta
+@import "mainConsultas";
+//Seccion Placa Madre
+@import "placaMadre";
+//Seccion Pagina en Construccion
+@import "paginaEnConstruccion";

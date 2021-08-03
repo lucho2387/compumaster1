@@ -1,0 +1,299 @@
+// <--VARIABLES--> 
+
+// OPERACIONES
+    $ancho: 200px;
+    $alto: 300px;
+    $tamañoFuente1: 10px;
+    $tamañoFuente2: 25px;
+
+ //CONDICIONALES
+    $headerColor: true;
+    $footerColor: false;
+
+//REUTILIZAR FRAGMENTOS
+    @mixin color ($color1){
+        color: $color1;
+    }
+
+
+// EACH 
+
+$titulos: (
+    h1: 28px,
+    h2: 25px,
+    h4:20px,
+);
+
+@each $titulo, $size in $titulos {
+    #{$titulo} {
+        font-size: $size;
+        margin-left: 10px;
+        font-weight: 700;
+    }
+}
+
+
+// Bloque 1
+.headerPlaca {
+    @if $headerColor == false{
+        background: rgb(242, 0, 0);
+        background: linear-gradient(90deg, rgb(3, 0, 16) 0%, rgb(11, 216, 89) 100%, rgb(63, 70, 61) 100%);
+        
+    }@else {
+        background: rgb(94,50,50);
+        background: linear-gradient(90deg, rgba(94,50,50,1) 0%, rgba(80,80,80,1) 100%, rgba(240,50,37,1) 100%);
+    } // Condicional IF
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// Elemento del Bloque 1
+.headerPlaca__titulo {
+    @include color ($color--blanco);  //REUTILIZAR FRAGMENTOS MIXIN
+    padding: 10px;
+    font-size: 30px;
+    font-family: $titulo;
+}
+
+// Modificador del Bloque 1
+.headerPlaca--span {
+    @include color ($color--rojo);  //REUTILIZAR FRAGMENTOS MIXIN
+    font-size: 40px;
+}
+
+// Elemento del Bloque 1
+.headerPlaca__navegacion {
+    ul {
+        li {
+            display: inline-block;
+            list-style: none;
+            padding: 20px;
+            .submenu {
+                display: none;
+                position: absolute;
+                padding-top: 5px;
+                li {
+                    a {
+                        color: $color--rojo;
+                        font-weight: 700;
+                    }
+                }
+            }
+            a {
+                text-decoration: none;
+                color: $color--blanco;
+                font-family: $titulo;
+                .productos {
+                    color: $color--rojo;
+                }
+            }
+            
+            .li--tuEquipo {
+                color: $color--rojo;
+            }
+            .li--armado {
+                color: $color--rojo;
+            }
+            
+            .li--productos {
+                color: $color--rojo;
+            }
+            
+            
+            
+            .li--consultas {
+                color: $color--rojo;
+            }
+            
+            .li--nosotros {
+                color: $color--rojo;
+            }
+        }
+    }
+}
+
+// Bloque 2
+#mainCategorias {
+    display: flex;
+    flex-direction: column;
+    .mainCategorias__titulo {
+        text-align: center;
+    }
+}
+
+// Modificador del Bloque 2
+.mainCategorias__navegacion--color {
+    background-color: $color--rojo;
+}
+
+// Bloque 3
+.caja {
+    display: grid;
+}
+
+// Elemento del Bloque 3
+.caja__frente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+// Modificador del Bloque 3
+.caja__frente--borde {
+    border-right: 5px solid red;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+// Modificador del Bloque 3
+.caja__frente--titulo { 
+    @extend .caja__frente--borde;  //Estilos de otra clase EXTEND
+    text-align: center;
+    font-size: ($tamañoFuente1*2)+5; //Operacion *  +
+}
+
+.imagen--borde {
+    border-left: 10px solid black;
+    border-radius: 20px;
+}
+
+.caja__frente--imagen {
+    @extend .imagen--borde;
+}
+
+// Modificador del Bloque 3
+.caja__frente--parrafo {
+    color: $color--rojo;
+    font-weight: 700;
+    margin: 20px;
+    font-size: $tamañoFuente2 - 5px; //Operacion -
+    text-align: center;
+}
+// Elemento del Bloque 3
+.caja__atras {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+// Modificador del Bloque 3
+.caja__atras--borde {
+    border-bottom: 5px solid white;
+    border-radius: 5px;
+}
+
+// Modificador del Bloque 3
+.caja__atras--titulo {
+    @extend .caja__atras--borde;
+    font-size: 25px;
+    color: $color--rojo;
+}
+
+// Modificador del Bloque 3
+.caja__atras--especificacion {
+    font-size: 20px;
+    color: $color--blanco;
+    text-align: center;
+}
+
+
+// Bloque 4
+
+.logoPublicidad {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 400px;
+}
+
+.logoPublicidad__imagen {
+    width: ($ancho/2);  // Operacion ($ancho/2)
+    background-color: red;
+}
+
+// Bloque 5
+.footer {
+    background-color: $color--rojo;
+    text-align: center;
+    padding: 10px;
+    
+    @if $headerColor == true{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(240,50,37,1) 0%, rgba(33,36,37,1) 76%);
+        
+    }@else {
+        background: rgb(94,50,50);
+        background: linear-gradient(90deg, rgba(94,50,50,1) 0%, rgba(80,80,80,1) 100%, rgba(240,50,37,1) 100%);
+    } // Condicional IF
+}
+
+// Modificador del Bloque 5
+.footer--parrafo {
+    @include color ($color--blanco);  //REUTILIZAR FRAGMENTOS MIXIN
+    font-size: $tamañoFuente1 + 10; //operacion +
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    font-family: $parrafo;
+}
+
+// Modificador del Bloque 
+.footer--enlace {
+    @include color (black);  //REUTILIZAR FRAGMENTOS MIXIN
+    position: relative;
+    top: 5px;
+    text-decoration: none;
+    font-family: $parrafo;
+}
+
+//BUCLE FOR
+
+@for $i from 1 through 3 {
+    .parrafo-#{$i} {
+        font-size: 10px * 2;
+    }
+} 
+
+//lista
+$colores: (
+    color1: red,
+    color2: blue,
+    color3: rgb(52, 228, 131),
+    color4: violet,
+); 
+
+
+@each $nombre, $color in $colores{
+    .#{$nombre} {
+        color: $color;
+        
+    }
+}
+
+//MAP
+
+$lista: (
+    h1: 4em,
+    h2: 3em,
+    h3: 2em,
+    h4: 1em,
+);
+
+$h3: map-get($lista, h3);
+
+h3 {
+    font-size: $h3;
+}
+
+
+
