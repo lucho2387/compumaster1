@@ -13,6 +13,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body> <!--Cuerpo de nuestra pagina-->
@@ -68,110 +69,322 @@
         </div>
       </nav>
    </header>
-   <main id="mainCategorias"> <!-- Contenido principal -->
-      <h2>Categorias</h2>
-      <nav>
-         <ul>
-            <li><a href="../secciones/placaMadre.html">Motherboard</a></li>
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/productos.html" class="procesadores">Pocesadores</a>
-               <ul class="submenu">
-                  <li><a href="../secciones/paginaenconstruccion.html">Amd</a></li>
-                  <li><a href="../secciones/paginaenconstruccion.html">Intel</a></li>
-               </ul>
-            </li>  
-            <li><a href="../secciones/coolers.html">Coolers</a></li>
-            <li><a href="../secciones/memoriasram.html">Memorias rams</a></li>
-            <li><a href="../secciones/almacenamiento.html">Almacenamiento</a></li>
-            <li><a href="../secciones/fuentes.html">Fuentes</a></li>
-            <li><a href="../secciones/monitores.html">Monitores</a></li>
-            <li><a href="../secciones/gabinetes.html">Gabinetes</a></li>
-            <li><a href="../secciones/placadevideo.html">Placas de video</a></li>
-            <li><a href="../secciones/perifericos.html">Perifericos</a></li>
-         </ul>
-      </nav>
-      <section id="contenedorMadre">
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado frente">
-                  <img src="../multimedia/imagenes/ryzen3.jpg" alt="Procesador Ryzen3">
-                  <h3>Ryzen 3</h3>
-                  <p>$20.000</p>
-               </div>
-               <div class="lado atras">
-                  <h4>Especificaciones</h4>
-                  <p class="especificacion">
-                     Modelo RYZEN 3 2200G<br>Socket AM4 APU 1th Gen<br>Núcleos 4<br>Frecuencia 3500.00 mhz<br>Proceso De Fabricación 14 nm<br>Chipset Gpu Radeon Vega 8<br>Hilos 4<br>Frecuencia Turbo 3700 mhz<br>
-                     Familia AMD RYZEN 3
-                  </p>
-               </div>
+   <div class = "main-wrapper">
+        <div class = "container">
+            <div class = "main-title">
+                <!--<h1>LISTA DE PRODUCTOS</h1>-->
+                <h3 style="color: red; padding-top:100px;">PROCESADORES</h3>
             </div>
-         </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado frente">
-                  <img src="../multimedia/imagenes/ryzen5.jpg" class="ryzenImagen5" alt="Procesador Ryzen5">
-                  <h3>Ryzen 5</h3>
-                  <p>$52.000</p>
-               </div>
-               <div class="lado atras">
-                  <h4>Especificaciones</h4>
-                  <p class="especificacion">
-                     Modelo Ryzen 5 1600 AF<br>Socket AM4 Ryzen 2th Gen<br>Núcleos 6<br>Frecuencia 3200.00 mhz<br>Proceso De Fabricación 12 nm<br>Chipset Gpu NO Posee Gráficos Integrados<br>Hilos 12<br>Frecuencia Turbo 3600 mhz<br>
-                     Familia AMD RYZEN 5
-                  </p>
-               </div>
+            <!--AGREGADO-->
+            <div class = "filter-btns">
+                <button type = "button" class = "filter-btn"><a href="productos.html">Procesadores</a></button>
+                <button type = "button" class = "filter-btn"><a href="placaMadre.html">Placa Madre</a></button>
+                <button type = "button" class = "filter-btn"><a href="placadevideo.html">Placa de Video</a></button>
+                <button type = "button" class = "filter-btn"><a href="memoriasram.html">Memoria Ram</a></button>
+                <button type = "button" class = "filter-btn"><a href="perifericos.html">Perifericos</a></button>
+                <button type = "button" class = "filter-btn"><a href="monitores.html">Monitores</a></button>
+                <button type = "button" class = "filter-btn"><a href="gabinetes.html">Gabinetes</a></button>
+                <button type = "button" class = "filter-btn"><a href="fuentes.html">Fuentes</a></button>
             </div>
-         </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado frente">
-                  <img src="../multimedia/imagenes/ryzen7.jpg" alt="Procesador Ryzen7">
-                  <h3>Ryzen 7</h3>
-                  <p>$70.000</p>
-               </div>
-               <div class="lado atras">
-                  <h4>Especificaciones</h4>
-                  <p class="especificacion">
-                     Modelo RYZEN 7 3700X<br>Socket AM4 Ryzen 3th Gen<br>Núcleos 8<br>Frecuencia 3600.00 mhz<br>Proceso De Fabricación 7 nm<br>Chipset Gpu NO Posee Gráficos Integrados<br>Hilos 16<br>Frecuencia Turbo 4400 mhz<br>
-                     Familia AMD RYZEN 7
-                  </p>
-               </div>
+            <div class = "display-style-btns">
+                <button type = "button" id = "grid-active-btn">
+                    <i class = "fas fa-th"></i>
+                </button>
+                <button type = "button" id = "details-active-btn">
+                    <i class = "fas fa-list-ul"></i>
+                </button>
             </div>
-         </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado frente">
-                  <img src="../multimedia/imagenes/ryzen9.jpg" class="ryzenImagen9" alt="Procesador Ryzen9">
-                  <h3>Ryzen 9</h3>
-                  <p>$95.000</p>
-               </div>
-               <div class="lado atras">
-                  <h4>Especificaciones</h4>
-                  <p class="especificacion">
-                     Modelo RYZEN 9 3900X<br>Socket AM4 Ryzen 3th Gen<br>Núcleos 12<br>Frecuencia 3800.00 mhz<br>Proceso De Fabricación 7 nm<br>Chipset Gpu NO Posee Gráficos Integrados<br>Hilos 24<br>Frecuencia Turbo 4600 mhz<br>
-                     Familia AMD RYZEN 9
-                  </p>
-               </div>
+            <div class = "item-list">
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/ryzen3.png" id="imagenCooler1">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Ryzen 3</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$20.000</span>
+                            <span class = "old-price">$22.500</span>
+                        </div>
+                        <p>Modelo RYZEN 3 2200G.Socket AM4 APU 1th Gen.Núcleos 4.Frecuencia 3500.00 mhz.Proceso De Fabricación 14 nm.Chipset Gpu Radeon Vega 8.Hilos 4.Frecuencia Turbo 3700 mhz.Familia AMD RYZEN 3</p>
+                         <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/ryzen5.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Ryzen 5</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$52.000</span>
+                            <span class = "old-price">$53.500</span>
+                        </div>
+                        <p>Modelo Ryzen 5 1600 AF.Socket AM4 Ryzen 2th Gen.Núcleos 6.Frecuencia 3200.00 mhz.Proceso De Fabricación 12 nm.Chipset Gpu NO Posee Gráficos Integrados.Hilos 12.Frecuencia Turbo 3600 mhz.Familia AMD RYZEN 5</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/ryzen7.png" id="imagenMonitor3">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail detalleMonitor3">
+                        <a href = "#" class = "item-name">Ryzen 7</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$70.000</span>
+                            <span class = "old-price">$72.600</span>
+                        </div>
+                        <p>Modelo RYZEN 7 3700X.Socket AM4 Ryzen 3th Gen.Núcleos 8.Frecuencia 3600.00 mhz.Proceso De Fabricación 7 nm.Chipset Gpu NO Posee Gráficos Integrados.Hilos 16.Frecuencia Turbo 4400 mhz.
+                        Familia AMD RYZEN 7</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/ryzen5.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Ryzen 5</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$42.524</span>
+                        </div>
+                        <p>Es ideal para jugadores y creadores de contenido que requieran un instrumento de gran ejecución.
+                        Memoria caché de 32 MB, rápida y volátil.
+                        Soporta memoria RAM DDR4.
+                        Su potencia es de 65 W.
+                        Cuenta con 12 hilos que favorecen la ejecución de múltiples programas a la vez.
+                        Incluye air cooler.
+                        Producto en empaque original.
+                        Procesador innovador desarrollado bajo altos estándares de calidad.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/ryzen7.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Ryzen 7</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$63.595</span>
+                            <span class = "old-price">$64.500</span>
+                        </div>
+                        <p>Marca : AMD.Línea : Ryzen.Modelo : 7 5800X.Modelo alfanumérico : 100-000000063.UPC : 730143312714.GPU integrado : No.Cooler : No.Caché : 32 MB.Cantidad de núcleos de CPU : 8.Hilos : 16.Tipos de memoria RAM soportadas : DDR4.Socket : AM4.Frecuencia mínima de reloj : 3,8 GHz.Frecuencia máxima de reloj : 4,7 GHz.Desbloqueado para OC : Si.TDP : 105 W</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/ryzen3.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Ryzen 3</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$45.500</span>
+                        </div>
+                        <p>Es ideal para jugadores y creadores de contenido que requieran un instrumento de gran ejecución.
+                        Memoria caché de 4 MB, rápida y volátil.
+                        Procesador gráfico Radeon Vega 8 Graphics.
+                        Soporta memoria RAM DDR4.
+                        Su potencia es de 65 W.
+                        Cuenta con 4 hilos que favorecen la ejecución de múltiples programas a la vez.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/ryzen7.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Ryzen 7</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$56.799</span>
+                        </div>
+                        <p>Es ideal para jugadores y creadores de contenido que requieran un instrumento de gran ejecución.
+                        Memoria caché de 32 MB, rápida y volátil.
+                        Soporta memoria RAM DDR4.
+                        Su potencia es de 105 W.
+                        Cuenta con 16 hilos que favorecen la ejecución de múltiples programas a la vez.
+                        Producto en empaque original.
+                        Procesador innovador desarrollado bajo altos estándares de calidad.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/ryzen3.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Ryzen 3</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$44.399</span>
+                            <span class = "old-price">$45.260</span>
+                        </div>
+                        <p>Es ideal para jugadores y creadores de contenido que requieran un instrumento de gran ejecución.
+                        Memoria caché de 4 MB, rápida y volátil.
+                        Procesador gráfico Radeon Vega 8 Graphics.
+                        Soporta memoria RAM DDR4.
+                        Su potencia es de 65 W.
+                        Cuenta con 4 hilos que favorecen la ejecución de múltiples programas a la vez.
+                        Incluye air cooler.
+                        Producto en empaque original.
+                        Procesador innovador desarrollado bajo altos estándares de calidad.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/ryzen5.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Ryzen 5</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$43.690</span>
+                        </div>
+                        <p>Marca: AMD.Modelo: Ryzen 5 5600X.Número de núcleos de CPU: 6.Número de hilos: 12.Frecuencia base: 3.7GHz.Frecuencia máxima máx: 4.6GHz.Caché L2 total: 3MB.Caché L3 total: 32MB.Desbloqueados: Sí.CMOS: TSMC 7nm FinFET.Package: AM4 (*compatible a partir de chipset 5xx*).Versión de PCI Express: PCIe 4.0.Solución térmica: Wraith Stealth.TDP/TDP predeterminado: 65W.Velocidad máxima de memoria: 3200MHz.Tipo de memoria: DDR4.Canales de memoria.2
+                        SKU 5600.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-   </main>
-   <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-          </div>
         </div>
-      </div>
-    </div>
-    
-    <footer class="bg-danger">
+   </div>
+   <div class="container">
+      <section class="customer-logos slider">
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div>  
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>  
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+      </section>
+   </div>
+   <footer class="bg-danger">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -185,9 +398,14 @@
           </div>
         </div>
       </div>
-    </footer>
+   </footer>
+   <script src="../js/script.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="../js/main.js"></script>
 </body>
 </html> <!-- Fin de nuestra pagina -->
