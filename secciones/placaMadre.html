@@ -13,6 +13,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body> <!--Cuerpo de nuestra pagina-->
@@ -67,111 +68,305 @@
             </div>
         </div>
       </nav>
-    </header>
-   <main id="mainCategorias"> <!-- Contenido principal --> <!-- Bloque 2 (mainCategorias)-->
-      <h2 class="mainCategorias__titulo">Categorias</h2> 
-      <nav class="mainCategorias__navegacion"> 
-         <ul>
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/placaMadre.html">Motherboard</a></li>
-            <li><a href="../secciones/productos.html" class="procesadores">Pocesadores</a>
-               <ul class="submenu">
-                  <li><a href="../secciones/paginaenconstruccion.html">Amd</a></li>
-                  <li><a href="../secciones/paginaenconstruccion.html">Intel</a></li>
-               </ul>
-            </li>  
-            <li><a href="../secciones/coolers.html">Coolers</a></li>
-            <li><a href="../secciones/memoriasram.html">Memorias rams</a></li>
-            <li><a href="../secciones/almacenamiento.html">Almacenamiento</a></li>
-            <li><a href="../secciones/fuentes.html">Fuentes</a></li>
-            <li><a href="../secciones/monitores.html">Monitores</a></li>
-            <li><a href="../secciones/gabinetes.html">Gabinetes</a></li>
-            <li><a href="../secciones/placadevideo.html">Placas de video</a></li>
-            <li><a href="../secciones/paginaenconstruccion.html">Perifericos</a></li>
-         </ul>
-      </nav>
-      <section id="contenedorMadre">
-         <div class="contenedorProducto">
-            <div class="caja"> <!-- Bloque 3 (caja)-->
-               <div class="lado caja__frente"> 
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/placa1.png" alt="Motherboard ROG">
-                  <h3 class="caja__frente--titulo color3">B450-F</h3> 
-                  <div class="caja__frente--borde"></div> <!-- Operacion Extend 3 -->
-                  <p class="caja__frente--parrafo parrafo-2">$19.000</p> 
-               </div>
-               <div class="lado caja__atras"> 
-               <div class="caja__atras--borde"></div> <!-- Operacion Extend 3 -->
-                  <h4 class="caja__atras--titulo">Especificaciones</h4> 
-                  <p class="caja__atras--especificacion"> 
-                  Modelo Asus ROG<br>AMD B450<br>CPU AM4<br>Tipo de memoria RAM DDR4<br>Capacidad máxima soportada de la memoria RAM 128 GB<br>Socket Socket AM4<br>
-                  </p> 
-               </div>
+   </header>
+   <main> <!-- Contenido principal --> <!-- Bloque 2 (mainCategorias)-->
+      <div class = "main-wrapper">
+        <div class = "container">
+            <div class = "main-title">
+                <!--<h1>LISTA DE PRODUCTOS</h1>-->
+                <h3 style="color: red; padding-top:100px;">PLACA MADRE</h3>
             </div>
-      </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado caja__frente">
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/placa2.png" class="ryzenImagen5" alt="Motherboard Asus Prime">
-                  <h3 class="caja__frente--titulo color4">Z490-P</h3>
-                  <div class="caja__frente--borde"></div> <!-- Operacion Extend 3 -->
-                  <p class="caja__frente--parrafo">$39.000</p>
-               </div>
-               <div class="lado caja__atras">
-                  <div class="caja__atras--borde"></div> <!-- Operacion Extend 3 -->
-                  <h4 class="caja__atras--titulo">Especificaciones</h4>
-                  <p class="caja__atras--especificacion">
-                  Modelo Asus Prime Z490-p<br>Plataforma Intel<br>Chipset Intel Z490<br>CPU 10th Gen Intel Core<br>Tipo de memoria RAM DDR4<br>Socket Intel LGA 1200  
-                  </p>
-               </div>
+            <!--AGREGADO-->
+            <div class = "filter-btns">
+                <button type = "button" class = "filter-btn"><a href="productos.html">Procesadores</a></button>
+                <button type = "button" class = "filter-btn"><a href="placaMadre.html">Placa Madre</a></button>
+                <button type = "button" class = "filter-btn"><a href="placadevideo.html">Placa de Video</a></button>
+                <button type = "button" class = "filter-btn"><a href="memoriasram.html">Memoria Ram</a></button>
+                <button type = "button" class = "filter-btn"><a href="perifericos.html">Perifericos</a></button>
+                <button type = "button" class = "filter-btn"><a href="monitores.html">Monitores</a></button>
+                <button type = "button" class = "filter-btn"><a href="gabinetes.html">Gabinetes</a></button>
+                <button type = "button" class = "filter-btn"><a href="fuentes.html">Fuentes</a></button>
             </div>
-         </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado caja__frente">
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/placa3.png" alt="Motherboard Gigabyte">
-                  <div class="caja__frente--borde imagen--borde"></div> <!-- Operacion Extend 3 -->
-                  <h3 class="caja__frente--titulo color2">B450 Aorus</h3>
-                  <p class="caja__frente--parrafo">$16.000</p>
-               </div>
-               <div class="lado caja__atras">
-                  <h4 class="caja__atras--titulo">Especificaciones</h4>
-                  <p class="caja__atras--especificacion">
-                  Modelo B450 Aorus Elite V2<br>Plataforma AMD<br>Chipset B450<br>Ranuras de expansión PCi Express 4.0<br>Capacidad máxima soportada de la memoria RAM 128 GB<br>Socket AM4<br>Tipo de memoria RAM DDR4
-                  </p>
-               </div>
+            <div class = "display-style-btns">
+                <button type = "button" id = "grid-active-btn">
+                    <i class = "fas fa-th"></i>
+                </button>
+                <button type = "button" id = "details-active-btn">
+                    <i class = "fas fa-list-ul"></i>
+                </button>
             </div>
-         </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado caja__frente">
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/placa4.png" class="ryzenImagen9" alt="Motherboard Gigabyte Z490">
-                  <h3 class="caja__frente--titulo color1">Gigabyte Z490</h3>
-                  <div class="caja__frente--borde"></div> <!-- Operacion Extend 3 -->
-                  <p class="caja__frente--parrafo parrafo-1">$126.000</p>
-               </div>
-               <div class="lado caja__atras">
-                  <h4 class="caja__atras--titulo">Especificaciones</h4>
-                  <p class="caja__atras--especificacion">
-                  Modelo Gigabyte Z490<br>Plataforma: Intel<br>Chipset Intel Z490 Express Chipset<br>CPU Support for 10th Generation Intel Core i9<br>Tipo de memoria RAM DDR4<br>Capacidad máxima soportada de la memoria RAM 128 GB<br>Socket LGA1200
-                  </p>
-               </div>
+            <div class = "item-list">
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/placa1.png" id="imagenCooler1">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">B450-F</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$19.000</span>
+                            <span class = "old-price">$20.500</span>
+                        </div>
+                        <p>Modelo Asus ROG.AMD B450.CPU AM4.Tipo de memoria RAM DDR4.Capacidad máxima soportada de memoria RAM 128 GB.Socket Socket AM4.</p>
+                         <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/placa2.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Z490-P</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$39.000</span>
+                        </div>
+                        <p>Modelo Asus Prime Z490-p.Plataforma Intel.Chipset Intel Z490.CPU 10th Gen Intel Core.Tipo de memoria RAM DDR4.Socket Intel LGA 1200.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/placa3.png" id="imagenMonitor3">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail detalleMonitor3">
+                        <a href = "#" class = "item-name">B450 Aorus</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$16.000</span>
+                            <span class = "old-price">$18.200</span>
+                        </div>
+                        <p>Modelo B450 Aorus Elite V2.Plataforma AMD.Chipset B450.Ranuras de expansión PCi Express 4.0.Capacidad máxima soportada de la memoria RAM 128 GB.Socket AM4.Tipo de memoria RAM DDR4.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/placa4.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Gigabyte Z490</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$126.000</span>
+                        </div>
+                        <p>Modelo Gigabyte Z490.Plataforma: Intel.Chipset Intel Z490 Express Chipset.CPU Support for 10th Generation Intel Core i9.Tipo de memoria RAM DDR4.Capacidad máxima soportada de la memoria RAM 128 GB.Socket LGA1200.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/placa5.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Gigabyte B550</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$23.500</span>
+                            <span class = "old-price">$24.200</span>
+                        </div>
+                        <p>Placa base para juegos AMD B550 con solución VRM digital, LAN para juegos GIGABYTE con administración de ancho de banda, PCIe 4.0 / 3.0 x4 M.2, RGB FUSION 2.0, Smart Fan 5, Q-Flash Plus, Diseño de resistencias anti-azufre.
+                        Admite AMD Ryzen ™ 5000 Series / Ryzen 5000 G-Series / 3rd Gen Ryzen ™ y 3rd Gen Ryzen ™ con procesadores gráficos Radeon.
+                        DDR4 sin búfer ECC / no ECC de doble canal, 4 DIMM.
+                        Solución VRM digital pura de 10 + 3 fases con MOSFET de bajo RDS (activado).
+                        Ranura Ultra Durable ™ PCIe 4.0 Ready x16.
+                        Ranuras ultrarrápidas NVMe PCIe 4.0 / 3.0 M.2.
+                        LAN para juegos 8118 exclusiva de GIGABYTE con gestión de ancho de banda.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/placa6.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Asus Prime A320m-k</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$10.914</span>
+                        </div>
+                        <p>Placa base AMD AM4 uATX con iluminación LED, DDR4 3200MHz, 32Gb / s M.2, HDMI, SATA 6Gb / s, USB 3.0.5X Protection III: múltiples protecciones de hardware para una protección completa.
+                        Iluminación LED: control de iluminación para trayectos de seguimiento de audio.M.2 nativo: velocidades de almacenamiento ultrarrápidas.AMD Ryzen de 3./ 2. / 1. generación / AMD Ryzen ™ de 2. y 1. generación con gráficos Radeon ™ Vega / Athlon ™ con procesadores gráficos Radeon ™ Vega
+                        2 x DIMM, máx. 64 GB, DDR4 3200 (OC) / 3000 (OC) / 2933 (OC) / 2800 (OC) / 2666/2400/2133 MHz Memoria sin búfer Procesadores.
+                      </p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/placa7.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Gigabyte Ga H410m</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$13.599</span>
+                        </div>
+                        <p>Marca : Gigabyte.Modelo : H410M H V2.UPC : 889523027370.Socket : LGA1200.Chipset : Intel H470 Express Chipset.Fuente : ATX.Memoria : 2 x DIMM, Max. 64GB, DDR4 2933/2666/2400/2133 MHz.Pci-e x16 : 1.Pci-e x1 : 2.Pci : No.Vga : Si.Dvi : No.Hdmi : 1.DisplayPort : No.Sonido : Realtek.Red : 10/100/1000*1.Ps2 : 1.Usb traseros : 6 ( 4 x 2.0 + 2 x 3.2 ).Usb internos : 4 ( 2 x 2.0 + 2 x 3.2 ).Wifi : No.Bluetooth : No.Optica : No.Iluminacion : No.E-sata : No.Lpt : No.Com : Interno.Sata : 4 x Sata 3.M.2 : 1.Crossfire : No.Formato : micro ATX.Dimensiones : 22.6cm x 18.5cm.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/placa8.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name"> Asus H410m-e</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$17.500</span>
+                            <span class = "old-price">$18.000</span>
+                        </div>
+                        <p>Plataforma: Intel.Chipset: h410.Ranuras de expansión: 1x PCIe 3.0 x16,2x PCIe 3.0 x1.
+                        Capacidad máxima soportada de la memoria RAM: 64 GB.Socket: 1200. x1.Con procesador: No.Tipo de memoria RAM: DDR4.CPU: intel.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/placa9.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Gigabyte B460m-ds3h</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$20.100</span>
+                        </div>
+                        <p>Intel® B460 Ultra Durable Motherboard with GIGABYTE 8118 Gaming LAN, PCIe Gen3 x4 M.2, Anti-Sulfur Resistor, Smart Fan 5, DualBIOS.Supports 10th Gen Intel® Core Processor.DDR4 Dual Channel Non-ECC Unbuffered , 4 DIMMs.Capacitadores de audio de alta calidad y con protección de ruido con separación de audio led.M.2 ultra rápida con PCIe Gen3 x4 y interfaz SATA.GIGABYTE Exclusive 8118 Gaming LAN with Bandwidth Management.Smart Fan 5 features Multiple Temperature Sensors, Hybrid Fan Headers with FAN STOP.Anti-Sulfur Resistors Design.Ultra Durable 15KV Surge LAN Protection.GIGABYTE UEFI DualBIOS.Memoria Intel® Optane.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
             </div>
-         </div>      
-      </section>
-   </main>
-   <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-          </div>
         </div>
-      </div>
-   </div>
+    </div>
+   </main>
+   <div class="container">
+      <section class="customer-logos slider">
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+      </section>
+    </div>
    <footer class="bg-danger">
       <div class="container">
         <div class="row">
@@ -190,5 +385,10 @@
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+   <script src="../js/script.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="../js/main.js"></script>
 </body>
 </html> <!-- Fin de nuestra pagina -->
