@@ -13,6 +13,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body> <!--Cuerpo de nuestra pagina-->
@@ -67,110 +68,321 @@
             </div>
         </div>
       </nav>
-    </header>
-   <main id="mainCategorias"> <!-- Contenido principal --> <!-- Bloque 2 (mainCategorias)-->
-      <h2 class="mainCategorias__titulo">Categorias</h2> 
-      <nav class="mainCategorias__navegacion"> 
-         <ul>
-            <li><a href="../secciones/placaMadre.html">Motherboard</a></li>
-            <li><a href="../secciones/productos.html" class="procesadores">Pocesadores</a>
-               <ul class="submenu">
-                  <li><a href="../secciones/paginaenconstruccion.html">Amd</a></li>
-                  <li><a href="../secciones/paginaenconstruccion.html">Intel</a></li>
-               </ul>
-            </li>  
-            <li><a href="../secciones/coolers.html">Coolers</a></li>
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/memoriasram.html">Memorias rams</a></li>
-            <li><a href="../secciones/almacenamiento.html">Almacenamiento</a></li>
-            <li><a href="../secciones/fuentes.html">Fuentes</a></li>
-            <li><a href="../secciones/monitores.html">Monitores</a></li>
-            <li><a href="../secciones/gabinetes.html">Gabinetes</a></li>
-            <li><a href="../secciones/placadevideo.html">Placas de video</a></li>
-            <li><a href="../secciones/perifericos.html">Perifericos</a></li>
-         </ul>
-      </nav>
-      <section id="contenedorMadre">
-         <div class="contenedorProducto">
-            <div class="caja"> <!-- Bloque 3 (caja)-->
-               <div class="lado caja__frente"> 
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/memoria1.png" alt="Memoria HyperX">
-                  <h3 class="caja__frente--titulo color3">Fury HyperX</h3> 
-                  <div class="caja__frente--borde"></div> <!-- Operacion Extend 3 -->
-                  <p class="caja__frente--parrafo parrafo-2">$7.550</p> 
-               </div>
-               <div class="lado caja__atras"> 
-               <div class="caja__atras--borde"></div> <!-- Operacion Extend 3 -->
-                  <h4 class="caja__atras--titulo">Especificaciones</h4> 
-                  <p class="caja__atras--especificacion"> 
-                    Optimizá el rendimiento de tu máquina con la tecnología DDR4 SDRAM<br>Memoria con formato UDIMM<br>Alcanza una velocidad de 3000 MHz<br>Apta para Computadoras de escritorio<br>Línea Fury<br>Cuenta con una tasa de transferencia de 24000 MB/s<br>
-                  </p> 
-               </div>
+   </header>
+   <main> <!-- Contenido principal --> <!-- Bloque 2 (mainCategorias)-->
+    <div class = "main-wrapper">
+        <div class = "container">
+            <div class = "main-title">
+                <!--<h1>LISTA DE PRODUCTOS</h1>-->
+                <h3 style="color: red; padding-top:100px;">MEMORIAS RAM</h3>
             </div>
-      </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado caja__frente">
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/memoria2.png" class="ryzenImagen5" alt="Memoria RAM Vengeance">
-                  <h3 class="caja__frente--titulo color4">Vengeance LPX 16GB 2x8GB</h3>
-                  <div class="caja__frente--borde"></div> <!-- Operacion Extend 3 -->
-                  <p class="caja__frente--parrafo">$14.670</p>
-               </div>
-               <div class="lado caja__atras">
-                  <div class="caja__atras--borde"></div> <!-- Operacion Extend 3 -->
-                  <h4 class="caja__atras--titulo">Especificaciones</h4>
-                  <p class="caja__atras--especificacion">
-                    Optimizá el rendimiento de tu máquina con la tecnología DDR4 DRAM<br>Memoria con formato UDIMM<br>Alcanza una velocidad de 3200 MHz<br>Apta para Computadoras de escritorio<br>Línea Vengeance LPX<br>Cuenta con una tasa de transferencia de 25600 MB/s
-                  </p>
-               </div>
+            <!--AGREGADO-->
+            <div class = "filter-btns">
+                <button type = "button" class = "filter-btn" id = "all"><a href="productos.html">Procesadores</a></button>
+                <button type = "button" class = "filter-btn" id = "new"><a href="placaMadre.html">Placa Madre</a></button>
+                <button type = "button" class = "filter-btn" id = "best-sellers"><a href="placadevideo.html">Placa de Video</a></button>
+                <button type = "button" class = "filter-btn" id = "specials"><a href="memoriasram.html">Memoria Ram</a></button>
+                <button type = "button" class = "filter-btn" id = "specials"><a href="perifericos.html">Perifericos</a></button>
+                <button type = "button" class = "filter-btn" id = "specials"><a href="monitores.html">Monitores</a></button>
+                <button type = "button" class = "filter-btn" id = "specials"><a href="gabinetes.html">Gabinetes</a></button>
             </div>
-         </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado caja__frente">
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/memoria3.png" alt="Memoria RAM Trident Z RGB">
-                  <div class="caja__frente--borde imagen--borde"></div> <!-- Operacion Extend 3 -->
-                  <h3 class="caja__frente--titulo color2">Trident Z gamer 16GB</h3>
-                  <p class="caja__frente--parrafo">$20.999</p>
-               </div>
-               <div class="lado caja__atras">
-                  <h4 class="caja__atras--titulo">Especificaciones</h4>
-                  <p class="caja__atras--especificacion">
-                    Optimizá el rendimiento de tu máquina con la tecnología DDR4<br>Memoria con formato UDIMM<br>Alcanza una velocidad de 3200 MHz<br>Apta para Computadoras de escritorio<br>Línea Trident Z RGB<br>Cuenta con una tasa de transferencia de 25600 MB/s
-                  </p>
-               </div>
+            <div class = "display-style-btns">
+                <button type = "button" id = "grid-active-btn">
+                    <i class = "fas fa-th"></i>
+                </button>
+                <button type = "button" id = "details-active-btn">
+                    <i class = "fas fa-list-ul"></i>
+                </button>
             </div>
-         </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado caja__frente">
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/memoria4.png" class="ryzenImagen9" alt="Memoria RAM Dominator Platinum">
-                  <h3 class="caja__frente--titulo color1">Dominator Platinum 32GB</h3>
-                  <div class="caja__frente--borde"></div> <!-- Operacion Extend 3 -->
-                  <p class="caja__frente--parrafo parrafo-1">$41.980</p>
-               </div>
-               <div class="lado caja__atras">
-                  <h4 class="caja__atras--titulo">Especificaciones</h4>
-                  <p class="caja__atras--especificacion">
-                    Optimizá el rendimiento de tu máquina con la tecnología DDR4 DRAM<br>Memoria con formato UDIMM<br>Alcanza una velocidad de 3200 MHz<br>Apta para Computadoras de escritorio<br>Línea Dominator Platinum RGB<br>Cuenta con una tasa de transferencia de 25600 MB/s
-                  </p>
-               </div>
+            <div class = "item-list">
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/memoria1.png" class="imagenMemoria1">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Fury HyperX</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$7.550</span>
+                            <span class = "old-price">$7.850</span>
+                        </div>
+                        <p>Optimizá el rendimiento de tu máquina con la tecnología DDR4 SDRAM.Memoria con formato UDIMM.Alcanza una velocidad de 3000 MHz.Apta para Computadoras de escritorio.Línea Fury.Cuenta con una tasa de transferencia de 24000 MB/s.</p>
+                         <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img">
+                        <img src = "../multimedia/imagenes/memoria2.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Vengeance LPX 16GB</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$14.670</span>
+                            <span class = "old-price">$15.350</span>
+                        </div>
+                        <p>Optimizá el rendimiento de tu máquina con la tecnología DDR4 DRAM.Memoria con formato UDIMM.Alcanza una velocidad de 3200 MHz.Apta para Computadoras de escritorio.Línea Vengeance LPX.Cuenta con una tasa de transferencia de 25600 MB/s.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto">
+                        <img src = "../multimedia/imagenes/memoria6.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Vengeance RGB Pro </a>
+                        <div class = "item-price">
+                            <span class = "new-price">$33.399</span>
+                        </div>
+                        <p>Optimizá el rendimiento de tu máquina con la tecnología DDR4 DRAM.
+                        Memoria con formato DIMM.
+                        Alcanza una velocidad de 3000 MHz.
+                        Apta para Computadoras de escritorio.
+                        Línea Vengeance RGB Pro.
+                        Cuenta con una tasa de transferencia de 24000 MB/s.
+                        Compatible con AMD, Intel.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img">
+                        <img src = "../multimedia/imagenes/memoria8.png" class="imagenMemoria8">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Spectrix D60G</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$7.999</span>
+                        </div>
+                        <p>Optimizá el rendimiento de tu máquina con la tecnología DDR4.
+                        Memoria con formato UDIMM.
+                        Alcanza una velocidad de 3200 MHz.
+                        Apta para Computadoras de escritorio.
+                        Línea Spectrix D60G.
+                        Cuenta con una tasa de transferencia de 25600 MB/s.
+                        Compatible con AMD, Intel.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img">
+                        <img src = "../multimedia/imagenes/memoria3.png" id="imagenMonitor3">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail detalleMonitor3">
+                        <a href = "#" class = "item-name">Trident Z gamer 16GB</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$20.999</span>
+                        </div>
+                        <p>Optimizá el rendimiento de tu máquina con la tecnología DDR4.Memoria con formato UDIMM.Alcanza una velocidad de 3200 MHz.Apta para Computadoras de escritorio.Línea Trident Z RGB.Cuenta con una tasa de transferencia de 25600 MB/s.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img">
+                        <img src = "../multimedia/imagenes/memoria4.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Dominator Platinum 32GB</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$41.980</span>
+                        </div>
+                        <p>Optimizá el rendimiento de tu máquina con la tecnología DDR4 DRAM.Memoria con formato UDIMM.Alcanza una velocidad de 3200 MHz.Apta para Computadoras de escritorio.Línea Dominator Platinum RGB.Cuenta con una tasa de transferencia de 25600 MB/s.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img">
+                        <img src = "../multimedia/imagenes/memoria7.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Spectrix D41</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$14.999</span>
+                        </div>
+                        <p>Optimizá el rendimiento de tu máquina con la tecnología DDR4.
+                        Memoria con formato UDIMM.
+                        Alcanza una velocidad de 3200 MHz.
+                        Apta para Computadoras de escritorio.
+                        Línea Spectrix D41.
+                        Cuenta con una tasa de transferencia de 25600 MB/s.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img">
+                        <img src = "../multimedia/imagenes/memoria5.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">XLR8 Gaming EPIC-X</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$6.949</span>
+                            <span class = "old-price">$7.500</span>
+                        </div>
+                        <p>Optimizá el rendimiento de tu máquina con la tecnología DDR4.
+                        Memoria con formato UDIMM.
+                        Alcanza una velocidad de 3200 MHz.
+                        Apta para Computadoras de escritorio.
+                        Línea XLR8 Gaming EPIC-X RGB.
+                        Cuenta con una tasa de transferencia de 25600 MB/s.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img">
+                        <img src = "../multimedia/imagenes/memoria9.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Gammix D30</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$7.199</span>
+                            <span class = "old-price">$7.500</span>
+                        </div>
+                        <p>Optimizá el rendimiento de tu máquina con la tecnología DDR4 DRAM.
+                        Memoria con formato UDIMM.
+                        Alcanza una velocidad de 3000 MHz.
+                        Apta para Computadoras de escritorio.
+                        Línea Gammix D30.
+                        Cuenta con una tasa de transferencia de 24000 MB/s.
+                        Compatible con Intel X299, AMD Ryzen.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>            
             </div>
-         </div>      
-      </section>
-   </main>
-   <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-          </div>
         </div>
-      </div>
+    </div>
+   </main>
+   <div class="container mx-auto">
+      <section class="customer-logos slider">
+        <div class="slide">
+          <img class="logoPublicidad mx-auto" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+        </div>  
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
+        </div>     
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div>  
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>  
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div>  
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>  
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+      </section>
    </div>
    <footer class="bg-danger">
       <div class="container">
@@ -189,6 +401,11 @@
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-   <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+   <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->  
+   <script src="../js/script.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="../js/main.js"></script>
 </body>
 </html> <!-- Fin de nuestra pagina -->
