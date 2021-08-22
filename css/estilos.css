@@ -183,12 +183,12 @@ a:hover{
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 0 4px 0 #d3d3d3;
+    box-shadow: 0 0 4px 0 rgba(15, 4, 4, 0.05);
     transition: all 0.2s ease-out;
     padding-top: 50px;
 }
 .item:hover{
-    box-shadow: 0 0 10px 1px red;
+    box-shadow: 0 0 10px 1px rgba(0, 4, 4, 0.15);
 }
 .item-img{
     position: relative;
@@ -253,7 +253,6 @@ a:hover{
 
 .itemFuente1 img{
    margin-bottom: 10px;
-   width: 50%;
 }
 
 .itemFuente{
@@ -285,6 +284,98 @@ a:hover{
    margin-bottom: 30px;
    width: 60%;
 }
+
+/*PAGINA HP*/
+
+.itemHp1 img{
+   width: 73%;
+}
+
+.itemHp4 img{
+   width: 78%;
+}
+
+.itemHp6 img{
+   width: 67%;
+}
+
+.itemHp7 img{
+   width: 71%;
+}
+
+.itemHp9 img{
+   width: 68%;
+}
+
+/*PAGINA LENOVO*/
+
+.itemLenovo1 img{
+  width: 90%;
+}
+
+.itemLenovo5 img {
+  width: 73%;
+}
+
+.itemLenovo6 img {
+  width: 63%;
+}
+
+.itemLenovo8 img {
+  width: 62%;
+}
+
+.itemLenovo9 img {
+  width: 73%;
+}
+
+/*PAGINA DELL*/
+
+.itemDell1 img{
+   width: 65%;
+}
+
+.itemDell3 img{
+   width: 72%;
+}
+
+.itemDell4 img{
+   width: 68%;
+}
+
+.itemDell6 img{
+   width: 50%;
+}
+
+.itemDell9 img{
+  width: 54%;
+}
+
+.itemDell6 img{
+  width: 58%;
+}
+
+/*PAGINA ASUS*/
+.itemAsus1 img{
+  width: 78%;
+}
+
+.itemAsus2 img{
+  width: 70%;
+}
+
+.itemAsus6 img{
+  width: 75%;
+}
+
+.itemAsus7 img{
+  width: 75%;
+}
+
+.itemAsus8 img{
+  width: 82%;
+}
+
 
 .icon-list{
     position: absolute;
@@ -327,7 +418,7 @@ a:hover{
 .item-name{
     font-weight: 500;
     font-size: 25px;
-    color: black;
+    color: #d3d3d3;
     display: block;
     text-align: center;
 }
