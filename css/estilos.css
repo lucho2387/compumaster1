@@ -183,12 +183,12 @@ a:hover{
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 0 4px 0 rgba(15, 4, 4, 0.05);
+    box-shadow: 0 0 4px 0 #d3d3d3;
     transition: all 0.2s ease-out;
     padding-top: 50px;
 }
 .item:hover{
-    box-shadow: 0 0 10px 1px rgba(0, 4, 4, 0.15);
+    box-shadow: 0 0 10px 1px red;
 }
 .item-img{
     position: relative;
@@ -447,7 +447,7 @@ a:hover{
 .item-name{
     font-weight: 500;
     font-size: 25px;
-    color: #d3d3d3;
+    color: black;
     display: block;
     text-align: center;
 }
