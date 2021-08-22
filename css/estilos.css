@@ -183,7 +183,7 @@ a:hover{
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 0 4px 0 rgba(15, 4, 4, 0.05);
+    box-shadow: black;
     transition: all 0.2s ease-out;
     padding-top: 50px;
 }
