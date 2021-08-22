@@ -1,431 +1,383 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="keywords" content="Motherboard, procesadores, cooler, memorias ram, almacenamiento, fuentes, monitores, gabinetes, placas de video nvidia, sapphire, zotac, asus, asrock, gigabyte, perifericos"> <!-- Palabras para posicionaiento SEO -->
-   <meta name="description" content="Detalles de las diferentes marcas de placas de video"> <!-- Descripción para posicionaiento SEO -->
-   <title>Productos</title>
-   <link rel="icon" href="../multimedia/imagenes/favicon.ico"> <!-- Icono de la página -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-   <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
-</head>
-<body> <!--Cuerpo de nuestra pagina-->
-   <header class="bg-danger">
-      <nav class="navColor navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><h1><span class="tituloCompu">COMPU</span><span>MASTER</span></h1></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item ">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../secciones/armado.html">Arma tu PC</a>
-                </li>
-                <li class="nav-item active dropdown">
-                  <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Productos
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../secciones/placaMadre.html">Motherboard</a></li>
-                    <li><a class="dropdown-item" href="../secciones/productos.html">Procesadores</a></li>
-                    <li><a class="dropdown-item" href="../secciones/memoriasram.html">Memorias ram</a></li>
-                    <li><a class="dropdown-item" href="../secciones/placadevideo.html">Placas de video</a></li>
-                    <li><a class="dropdown-item" href="../secciones/gabinetes.html">Gabinete</a></li>
-                    <li><a class="dropdown-item" href="../secciones/monitores.html">Monitor</a></li>
-                    <li><a class="dropdown-item" href="../secciones/fuentes.html">Fuentes</a></li>
-                    <li><a class="dropdown-item" href="../secciones/perifericos.html">Perifericos</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item active dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Encontra tu Equipo
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../secciones/hp.html">HP</a></li>
-                    <li><a class="dropdown-item" href="../secciones/dell.html">Dell</a></li>
-                    <li><a class="dropdown-item" href="../secciones/tuequipo.html">Lenovo</a></li>
-                    <li><a class="dropdown-item" href="../secciones/asus.html">Asus</a></li> 
-                     <li><a class="dropdown-item" href="../secciones/bangho.html">Bangho</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../secciones/consultas.html">Consultas</a>
-                <li class="nav-item">
-                  <a class="nav-link" href="../secciones/nosotros.html">Nosotros</a>
-                </li>
-              </ul>
-            </div>
-        </div>
-      </nav>
-    </header>
-   <main> <!-- Contenido principal --> <!-- Bloque 2 (mainCategorias)-->
-      <div class = "main-wrapper">
-        <div class = "container">
-            <div class = "main-title">
-                <!--<h1>LISTA DE PRODUCTOS</h1>-->
-                <h3 style="color: red; padding-top:100px;">PLACA DE VIDEO</h3>
-            </div>
-            <!--AGREGADO-->
-            <div class = "filter-btns">
-                <button type = "button" class = "filter-btn"><a href="productos.html">Procesadores</a></button>
-                <button type = "button" class = "filter-btn"><a href="placaMadre.html">Placa Madre</a></button>
-                <button type = "button" class = "filter-btn"><a href="placadevideo.html">Placa de Video</a></button>
-                <button type = "button" class = "filter-btn"><a href="memoriasram.html">Memoria Ram</a></button>
-                <button type = "button" class = "filter-btn"><a href="perifericos.html">Perifericos</a></button>
-                <button type = "button" class = "filter-btn"><a href="monitores.html">Monitores</a></button>
-                <button type = "button" class = "filter-btn"><a href="gabinetes.html">Gabinetes</a></button>
-                <button type = "button" class = "filter-btn"><a href="fuentes.html">Fuentes</a></button>
-            </div>
-            <div class = "display-style-btns">
-                <button type = "button" id = "grid-active-btn">
-                    <i class = "fas fa-th"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Motherboard, procesadores, cooler, memorias ram, almacenamiento, fuentes, monitores, gabinetes, placas de video nvidia, sapphire, zotac, asus, asrock, gigabyte, perifericos"> <!-- Palabras para posicionaiento SEO -->
+        <meta name="description" content="Detalles de las diferentes marcas de placas de video"> <!-- Descripción para posicionaiento SEO -->
+        <title>Productos</title>
+        <link rel="icon" href="../multimedia/imagenes/favicon.ico"> <!-- Icono de la página -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
+    </head>
+    <body> <!--Cuerpo de nuestra pagina-->
+    <header class="bg-danger">
+        <nav class="navColor navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><h1><span class="tituloCompu">COMPU</span><span>MASTER</span></h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <button type = "button" id = "details-active-btn">
-                    <i class = "fas fa-list-ul"></i>
-                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../secciones/armado.html">Arma tu PC</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../secciones/placaMadre.html">Motherboard</a></li>
+                        <li><a class="dropdown-item" href="../secciones/productos.html">Procesadores</a></li>
+                        <li><a class="dropdown-item" href="../secciones/memoriasram.html">Memorias ram</a></li>
+                        <li><a class="dropdown-item" href="../secciones/placadevideo.html">Placas de video</a></li>
+                        <li><a class="dropdown-item" href="../secciones/gabinetes.html">Gabinete</a></li>
+                        <li><a class="dropdown-item" href="../secciones/monitores.html">Monitor</a></li>
+                        <li><a class="dropdown-item" href="../secciones/fuentes.html">Fuentes</a></li>
+                        <li><a class="dropdown-item" href="../secciones/perifericos.html">Perifericos</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Encontra tu Equipo
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../secciones/hp.html">HP</a></li>
+                        <li><a class="dropdown-item" href="../secciones/dell.html">Dell</a></li>
+                        <li><a class="dropdown-item" href="../secciones/tuequipo.html">Lenovo</a></li>
+                        <li><a class="dropdown-item" href="../secciones/asus.html">Asus</a></li> 
+                        <li><a class="dropdown-item" href="../secciones/bangho.html">Bangho</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../secciones/consultas.html">Consultas</a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../secciones/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                </div>
             </div>
-            <div class = "item-list">
-                <div class = "item">
-                    <div class = "item-img mx-auto">
-                        <img src = "../multimedia/imagenes/rtx3060-1.png" id="imagenCooler1">
-                        <div class = "icon-list">
-                            <button type = "button">
-                                <i class = "fas fa-sync-alt"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class = "item-detail">
-                        <a href = "#" class = "item-name">GeForce RTX 3060</a>
-                        <div class = "item-price">
-                            <span class = "new-price">$140.000</span>
-                        </div>
-                        <p>RTX 3060 12G-P5-3657-KR 12GBG.Interfaz PCI-Express 4.0.Bus de memoria: 192bit.Cantidad de núcleos: 3584.Frecuencia boost del núcleo de 1882MHz.Resolución máxima: 7680x4320.</p>
-                         <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
-                    </div>
+        </nav>
+        </header>
+    <main> <!-- Contenido principal --> <!-- Bloque 2 (mainCategorias)-->
+        <div class = "main-wrapper">
+            <div class = "container">
+                <div class = "main-title">
+                    <!--<h1>LISTA DE PRODUCTOS</h1>-->
+                    <h2 style="color: red; padding-top:100px;">PLACA DE VIDEO</h2>
                 </div>
-                <div class = "item">
-                    <div class = "item-img mx-auto">
-                        <img src = "../multimedia/imagenes/rtx3070.png">
-                        <div class = "icon-list">
-                            <button type = "button">
-                                <i class = "fas fa-sync-alt"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class = "item-detail">
-                        <a href = "#" class = "item-name">Zotac Rtx 3070</a>
-                        <div class = "item-price">
-                            <span class = "new-price">$233.000</span>
-                        </div>
-                        <p>GPU GeForce RTX 3070.Núcleos CUDA 5888.Reloj de la memoria 14 Gbps.Bus de memoria 256 bits.Reloj del motor Impulso: 1755 MHz.PCI-Express 4.0 16x.</p>
-                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
-                    </div>
+                <!--AGREGADO-->
+                <div class = "filter-btns">
+                    <button type = "button" class = "filter-btn"><a href="productos.html">Procesadores</a></button>
+                    <button type = "button" class = "filter-btn"><a href="placaMadre.html">Placa Madre</a></button>
+                    <button type = "button" class = "filter-btn"><a href="placadevideo.html">Placa de Video</a></button>
+                    <button type = "button" class = "filter-btn"><a href="memoriasram.html">Memoria Ram</a></button>
+                    <button type = "button" class = "filter-btn"><a href="perifericos.html">Perifericos</a></button>
+                    <button type = "button" class = "filter-btn"><a href="monitores.html">Monitores</a></button>
+                    <button type = "button" class = "filter-btn"><a href="gabinetes.html">Gabinetes</a></button>
+                    <button type = "button" class = "filter-btn"><a href="fuentes.html">Fuentes</a></button>
                 </div>
-                <div class = "item">
-                    <div class = "item-img mx-auto">
-                        <img src = "../multimedia/imagenes/rtx3080.png" id="imagenMonitor3">
-                        <div class = "icon-list">
-                            <button type = "button">
-                                <i class = "fas fa-sync-alt"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class = "item-detail detalleMonitor3">
-                        <a href = "#" class = "item-name">MSI RTX 3080</a>
-                        <div class = "item-price">
-                            <span class = "new-price">$366.889</span>
-                            <span class = "old-price">$368.500</span>
-                        </div>
-                        <p>Nvidia MSI RTX 3080.Interfaz PCI-Express 4.0.Cantidad de núcleos: 8704.Frecuencia boost del núcleo de 1815MHz.Resolución máxima: 7680x4320.Requiere de 750W de alimentación.</p>
-                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
-                    </div>
+                <div class = "display-style-btns">
+                    <button type = "button" id = "grid-active-btn">
+                        <i class = "fas fa-th"></i>
+                    </button>
+                    <button type = "button" id = "details-active-btn">
+                        <i class = "fas fa-list-ul"></i>
+                    </button>
                 </div>
-                <div class = "item">
-                    <div class = "item-img mx-auto">
-                        <img src = "../multimedia/imagenes/rtx3090.png">
-                        <div class = "icon-list">
-                            <button type = "button">
-                                <i class = "fas fa-sync-alt"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "far fa-heart"></i>
-                            </button>
+                <div class = "item-list">
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/rtx3060-1.png" id="imagenCooler1">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a class = "item-name">GeForce RTX 3060</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$140.000</span>
+                            </div>
+                            <p>RTX 3060 12G-P5-3657-KR 12GBG. Interfaz PCI-Express 4.0. Bus de memoria: 192bit.Cantidad de núcleos: 3584. Frecuencia boost del núcleo de 1882MHz. Resolución máxima: 7680x4320.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
                         </div>
                     </div>
-                    <div class = "item-detail">
-                        <a href = "#" class = "item-name">GeForce RTX 3090</a>
-                        <div class = "item-price">
-                            <span class = "new-price">$629.990</span>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/rtx3070.png">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p>GeForce RTX 3090.Fabricante Nvidia.Tipo de memoria gráfica GDDR6X.Contectividad HDMI 2.1, 3 DisplayPort 1.4a.Tamaño de memoria 24 GB.</p>
-                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
-                    </div>
-                </div>
-                <div class = "item">
-                    <div class = "item-img mx-auto">
-                        <img src = "../multimedia/imagenes/gtx1050.png">
-                        <div class = "icon-list">
-                            <button type = "button">
-                                <i class = "fas fa-sync-alt"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class = "item-detail">
-                        <a href = "#" class = "item-name">MSI GTX 1050</a>
-                        <div class = "item-price">
-                            <span class = "new-price">$51.789</span>
-                            <span class = "old-price">$52.200</span>
-                        </div>
-                        <p>Interfaz PCI-Express 3.0.
-                        Bus de memoria: 128bit.
-                        Cantidad de núcleos: 768.
-                        Frecuencia boost del núcleo de 1455MHz y base de 1341MHz.
-                        Resolución máxima: 7680x4320.
-                        Compatible con directX y openGL.
-                        Requiere de 300W de alimentación.
-                        Doble ventilación resistente al polvo.
-                        Diseñada con tecnología Auto-Extreme que garantiza calidad y rendimiento.
-                        Permite la conexión de hasta 3 pantallas simultáneas.
-                        Formatos de conexión: DL-DVI-D, HDMI, DisplayPort..</p>
-                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
-                    </div>
-                </div>
-                <div class = "item">
-                    <div class = "item-img mx-auto">
-                        <img src = "../multimedia/imagenes/msi700.png">
-                        <div class = "icon-list">
-                            <button type = "button">
-                                <i class = "fas fa-sync-alt"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "far fa-heart"></i>
-                            </button>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Zotac Rtx 3070</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$233.000</span>
+                            </div>
+                            <p>GPU GeForce RTX 3070. Núcleos CUDA 5888. Reloj de la memoria 14 Gbps. Bus de memoria 256 bits. Reloj del motor Impulso: 1755 MHz. PCI-Express 4.0 16x.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
                         </div>
                     </div>
-                    <div class = "item-detail">
-                        <a href = "#" class = "item-name">MSI GeForce 700</a>
-                        <div class = "item-price">
-                            <span class = "new-price">$11.299</span>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/rtx3080.png" id="imagenMonitor3">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p>Interfaz PCI-Express 2.0.
-                        Bus de memoria: 64bit.
-                        Frecuencia base del núcleo de 954MHz.
-                        Resolución máxima: 4096x2160.
-                        Compatible con directX y openGL.
-                        Requiere de 300W de alimentación.
-                        Permite la conexión de hasta 2 pantallas simultáneas.
-                        Formatos de conexión: DL-DVI-D, HDMI 1.4, D-Sub.</p>
-                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
-                    </div>
-                </div>
-                <div class = "item">
-                    <div class = "item-img mx-auto">
-                        <img src = "../multimedia/imagenes/msi1650.png">
-                        <div class = "icon-list">
-                            <button type = "button">
-                                <i class = "fas fa-sync-alt"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "far fa-heart"></i>
-                            </button>
+                        <div class = "item-detail detalleMonitor3">
+                            <a href = "#" class = "item-name">MSI RTX 3080</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$366.889</span>
+                                <span class = "old-price">$368.500</span>
+                            </div>
+                            <p>Nvidia MSI RTX 3080. Interfaz PCI-Express 4.0. Cantidad de núcleos: 8704. Frecuencia boost del núcleo de 1815MHz. Resolución máxima: 7680x4320. Requiere de 750W de alimentación.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
                         </div>
                     </div>
-                    <div class = "item-detail">
-                        <a href = "#" class = "item-name">MSI Ventus GTX 1650</a>
-                        <div class = "item-price">
-                            <span class = "new-price">$64.999</span>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/rtx3090.png">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p>Interfaz PCI-Express 3.0.
-                        Bus de memoria: 128bit.
-                        Cantidad de núcleos: 896.
-                        Frecuencia boost del núcleo de 1620MHz.
-                        Resolución máxima: 7680x4320.
-                        Compatible con directX y openGL.
-                        Requiere de 300W de alimentación.
-                        Permite la conexión de hasta 3 pantallas simultáneas.
-                        Formatos de conexión: DL-DVI-D, HDMI 2.0b, DisplayPort 1.4a.</p>
-                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
-                    </div>
-                </div>
-                <div class = "item">
-                    <div class = "item-img mx-auto">
-                        <img src = "../multimedia/imagenes/asus1050.png">
-                        <div class = "icon-list">
-                            <button type = "button">
-                                <i class = "fas fa-sync-alt"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "far fa-heart"></i>
-                            </button>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">GeForce RTX 3090</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$629.990</span>
+                            </div>
+                            <p>GeForce RTX 3090. Fabricante Nvidia.Tipo de memoria gráfica GDDR6X. Contectividad HDMI 2.1, 3 DisplayPort 1.4a. Tamaño de memoria 24 GB.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
                         </div>
                     </div>
-                    <div class = "item-detail">
-                        <a href = "#" class = "item-name">Asus Phoenix GTX 1050</a>
-                        <div class = "item-price">
-                            <span class = "new-price">$46.900</span>
-                            <span class = "old-price">$47.500</span>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/gtx1050.png">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p>Interfaz PCI-Express 3.0.
-                        Bus de memoria: 128bit.
-                        Cantidad de núcleos: 768.
-                        Frecuencia boost del núcleo de 1392MHz y base de 1290MHz.
-                        Resolución máxima: 7680x4320.
-                        Compatible con directX y openGL.
-                        Requiere de 300W de alimentación.
-                        Doble ventilación resistente al polvo.
-                        Diseñada con tecnología Auto-Extreme que garantiza calidad y rendimiento.
-                        Formatos de conexión: DVI-D, HDMI 2.0b, DisplayPort 1.4.</p>
-                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
-                    </div>
-                </div>
-                <div class = "item">
-                    <div class = "item-img mx-auto">
-                        <img src = "../multimedia/imagenes/rx5700.png">
-                        <div class = "icon-list">
-                            <button type = "button">
-                                <i class = "fas fa-sync-alt"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button">
-                                <i class = "far fa-heart"></i>
-                            </button>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">MSI GTX 1050</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$51.789</span>
+                                <span class = "old-price">$52.200</span>
+                            </div>
+                            <p>Interfaz PCI-Express 3.0. Bus de memoria: 128bit. Cantidad de núcleos: 768. Frecuencia boost del núcleo de 1455MHz y base de 1341MHz. Resolución máxima: 7680x4320. Compatible con directX y openGL. Requiere de 300W de alimentación. Doble ventilación resistente al polvo. Diseñada con tecnología Auto-Extreme que garantiza calidad y rendimiento. Permite la conexión de hasta 3 pantallas simultáneas. Formatos de conexión: DL-DVI-D, HDMI, DisplayPort..</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
                         </div>
                     </div>
-                    <div class = "item-detail">
-                        <a href = "#" class = "item-name">Asus Rx 5700</a>
-                        <div class = "item-price">
-                            <span class = "new-price">$269.000</span>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/msi700.png">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
                         </div>
-                        <p>Motor de gráficos: AMD Radeon RX 5700 XT
-                         Bus estándar: PCI Express 4.0
-                         OpenGL: OpenGL®4.6
-                         Memoria de video: GDDR6 8GB
-                         Procesadores de flujo: 2560
-                         Reloj de la memoria: 14 Gbps
-                         interfaz de memoria : 256-bit
-                         Resolución: 7680x4320
-                         Interfaz: HDMI 2.0*1 // DISPLAY PORT 1.4*3
-                         Máximo soporte de pantalla: 6
-                         Soporte NVlink / Crossfire: SI
-                         PSU recomendada: 600W
-                         Conectores de poder: 2*8PIN
-                         Dimensiones: 30.5 x 13 x 5.4 CM</p>
-                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">MSI GeForce 700</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$11.299</span>
+                            </div>
+                            <p>Interfaz PCI-Express 2.0. Bus de memoria: 64bit. Frecuencia base del núcleo de 954MHz. Resolución máxima: 4096x2160. Compatible con directX y openGL. Requiere de 300W de alimentación. Permite la conexión de hasta 2 pantallas simultáneas. Formatos de conexión: DL-DVI-D, HDMI 1.4, D-Sub.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/msi1650.png">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">MSI Ventus GTX 1650</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$64.999</span>
+                            </div>
+                            <p>Interfaz PCI-Express 3.0. Bus de memoria: 128bit. Cantidad de núcleos: 896. Frecuencia boost del núcleo de 1620MHz. Resolución máxima: 7680x4320. Compatible con directX y openGL. Requiere de 300W de alimentación. Permite la conexión de hasta 3 pantallas simultáneas. Formatos de conexión: DL-DVI-D, HDMI 2.0b, DisplayPort 1.4a.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/asus1050.png">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Asus Phoenix GTX 1050</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$46.900</span>
+                                <span class = "old-price">$47.500</span>
+                            </div>
+                            <p>Interfaz PCI-Express 3.0. Bus de memoria: 128bit. Cantidad de núcleos: 768. Frecuencia boost del núcleo de 1392MHz y base de 1290MHz. Resolución máxima: 7680x4320. Compatible con directX y openGL. Requiere de 300W de alimentación. Doble ventilación resistente al polvo. Diseñada con tecnología Auto-Extreme que garantiza calidad y rendimiento. Formatos de conexión: DVI-D, HDMI 2.0b, DisplayPort 1.4.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/rx5700.png">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Asus Rx 5700</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$269.000</span>
+                            </div>
+                            <p>Motor de gráficos: AMD Radeon RX 5700 XT Bus estándar: PCI Express 4.0 OpenGL: OpenGL®4.6 Memoria de video: GDDR6 8GB Procesadores de flujo: 2560 Reloj de la memoria: 14 Gbps interfaz de memoria : 256-bit Resolución: 7680x4320 Interfaz: HDMI 2.0*1 // DISPLAY PORT 1.4*3 Máximo soporte de pantalla: 6 Soporte NVlink / Crossfire: SI PSU recomendada: 600W Conectores de poder: 2*8PIN Dimensiones: 30.5 x 13 x 5.4 CM</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </main>
+    <div class="container">
+        <section class="customer-logos p-5 slider">
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo1.png" alt="Logo Logitech">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo2.png" alt="Logo Amd">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo4.png" alt="Logo Gigabyte">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo5.png" alt="Logo Hyperx">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo7.png" alt="Logo Adata">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo8.png" alt="Logo Cooler Master">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo9.png" alt="Logo Republic Of Gamers">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo10.png" alt="Logo Western Digital">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo11.png" alt="Logo Zotac">
+            </div>
+        </section>
     </div>
-   </main>
-   <div class="container">
-      <section class="customer-logos slider">
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-        </div>    
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-        </div>     
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-        </div>    
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-        </div>   
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-        </div>
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
-        </div>  
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-        </div>
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-        </div>   
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-        </div>  
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
-        </div>  
-        <div class="slide">
-          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-        </div>
-      </section>
-    </div>
-   <footer class="bg-danger">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <p class="text-center text-white">Copyright - Todos los derechos reservados</p>
-            <p class="text-center text-white">Seguinos en todas nuestras redes</p>
-            <div class="d-flex justify-content-center align-item-center">
-               <a class="redes" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook text-Light"></i></a>
-               <a class="redes" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram text-Light"></i></a>
-               <a class="redes" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter text-Light"></i></a>
+    <footer class="bg-danger">
+            <div class="container">
+                <div class="row">
+                <div class="col">
+                    <p class="text-center text-white">Copyright - Todos los derechos reservados</p>
+                    <p class="text-center text-white">Seguinos en todas nuestras redes</p>
+                    <div class="d-flex justify-content-center align-item-center">
+                    <a class="redes" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook text-Light"></i></a>
+                    <a class="redes" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram text-Light"></i></a>
+                    <a class="redes" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter text-Light"></i></a>
+                    </div>
+                </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-   </footer>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-   <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
-   <script src="../js/script.js"></script>
-   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+    <script src="../js/script.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html> <!-- Fin de nuestra pagina -->
-
