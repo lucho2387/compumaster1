@@ -13,10 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!-- Carrusel Logo -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body><!-- Cuerpo de nuestra pagina -->
-    <header class="bg-danger">
+    <header>
       <nav class="navColor navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"><h1><span class="tituloCompu">COMPU</span><span>MASTER</span></h1></a>
@@ -68,85 +69,292 @@
         </div>
       </nav>
     </header>
-    <h2 class="notebooks color1">Notebooks</h2>
     <main> <!-- Contenido principal -->
-      <nav>
-        <ul class="categorias">
-            <li><a href="../secciones/hp.html">HP</a></li>
-            <li><a href="../secciones/tuequipo.html">Lenovo</a></li>
-              <ul class="marcaLenovo submenu">
-                  <li><a href="../secciones/paginaenconstruccion.html">T14s</a></li>
-                  <li><a href="../secciones/paginaenconstruccion.html">T15</a></li>
-              </ul>
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/dell.html">Dell</a></li>
-            <li><a href="../secciones/asus.html">Asus</a></li>
-            <li><a href="../secciones/bangho.html">Bangho</a></li>
-        </ul>
-      </nav>
+      <div class = "main-title">
+          <!--<h1>LISTA DE PRODUCTOS</h1>-->
+          <h3 style="color: red; padding-top:100px;">NOTEBOOK HP</h3>
+      </div>
+      <!--AGREGADO-->
+      <div class = "filter-btns">
+          <button type = "button" class = "filter-btn"><a href="../secciones/hp.html">HP</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/tuequipo.html">Lenovo</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/dell.html">Dell</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/asus.html">Asus</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/bangho.html">Bangho</a></button>
+      </div>
     </main>
-    <section class="contenedorMadre margenNotebook">
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/dell1.png" class="imagenLenovo lenovoTs14" alt="Notebook Dell Inspiron 3501">
-            <h3>Notebook Dell 3501</h3>
-            <p class="precio">$99.899</p>
+    <section>
+      <div class = "main-wrapper">
+          <div class = "container">
+              <div class = "display-style-btns">
+                  <button type = "button" id = "grid-active-btn">
+                      <i class = "fas fa-th"></i>
+                  </button>
+                  <button type = "button" id = "details-active-btn">
+                      <i class = "fas fa-list-ul"></i>
+                  </button>
+              </div>
+              <div class = "item-list">
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemDell1">
+                          <img src = "../multimedia/imagenes/dell1.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook Dell 3501</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$99.899</span>
+                          </div>
+                          <p>Marca: Dell. Línea: Inspiron. Modelo: 3501. Memoria RAM: 4 GB. Tipo de memoria RAM: DDR4. Resolución de la pantalla: 1366 px x 768 px. Tarjeta gráfica: Intel UHD Graphics G1.</p>
+                           <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/dell2.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook Dell 15</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$125.450</span>
+                              <span class = "old-price">$127.200</span>
+                          </div>
+                          <p>Marca: Dell. Línea: Inspiron. Modelo: 5593. Memoria RAM: 8 GB. Tipo de memoria RAM: DDR4. Resolución de la pantalla: 1920 x 1080 px. GeForce MX230 2GB.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemDell3">
+                          <img src = "../multimedia/imagenes/dell3.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail detalleMonitor3">
+                          <a href = "#" class = "item-name">Notebook Dell 3510</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$218.500</span>
+                          </div>
+                          <p>Marca: Dell. Línea: Latitude. Modelo: 3510. Memoria RAM: 8 GB. Tipo de memoria RAM: DDR4. Resolución de la pantalla: 1920 px x 1080 px. Tarjeta gráfica: NVIDIA GeForce MX230.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemDell4">
+                          <img src = "../multimedia/imagenes/dell4.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Inspiron 3493</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$71.623</span>
+                          </div>
+                          <p>Procesador Intel Core i3. Memoria RAM de 4GB. Pantalla LED de 14". Resolución de 1366x768 px. Placa de video Intel UHD Graphics. Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Modo de sonido Stereo.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/dell5.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Dell Inspiron 3501</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$99.999</span>
+                              <span class = "old-price">$102.000</span>
+                          </div>
+                          <p>Procesador Intel Core i5. Memoria RAM de 8GB. Pantalla LED de 15.6". Resolución de 1366x768 px. Es antirreflejo. Placa de video Intel Iris Xe Graphics. Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Posee pad numérico. Modo de sonido Stereo.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemDell6">
+                          <img src = "../multimedia/imagenes/dell6.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Dell Latitude 5410</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$245.000</span>
+                          </div>
+                          <p>Intel® Core™ i7-10610U – 8 MB de caché – 4 nucleos 10°gen, 4.9 GHz con TURBO BOOST. 16GB RAM -Máximo 32GB. 500 GB disco solido M.2. 14 pulgadas Full HD Widescreen LED 1920 x 10810 pantalla LED. Video Intel® UHD. Teclado español RETRO ILUMINADO LED</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/dell7.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Dell Intel Core I5</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$109.999</span>
+                          </div>
+                          <p>Modelo I3501-5580BLK-PUS. Núcleos de CPU 4. Frecuencia de reloj de la CPU 1000 MHz. Frecuencia de reloj turbo de la CPU 3600 MHz. Tamaño de RAM 12 GB. GPU Gráficos Intel UHD. Capacidad SSD 256 GB. Resolución 1920 x 1080.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/dell8.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Dell Inspiron 15.6</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$149.000</span>
+                              <span class = "old-price">$151.200</span>
+                          </div>
+                          <p>Intel® Iris® Xe Graphics with shared graphics Maximum Resolution: 1920 x 1080. SSD Capacity: 256GB M.2 PCIe NVMe Solid State Drive. RAM Size: 12GB. Operating System: Windows 10 Home. Procesador: 11th Generation Intel® Core™ i5-1135G7 Speed: 8MB Cache, up to 4.2 GHz. Screen Size: 15.6-inch FHD (1920 x 1080).</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemDell9">
+                          <img src = "../multimedia/imagenes/dell9.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Dell 3520 I5</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$139.999</span>
+                          </div>
+                          <p>Marca: DELL. Línea: Latitude. Modelo: 3520. Pantalla: 15.6" HD (1366 x 768), TN, 220 nits, 60 Hz, Antirreflejo. Procesador: Intel Core i5-1135G7 de 11.a generación (4C, 8T, caché 8 MB, hasta 4,20 GHz). Memoria RAM: 16GB DDR4 SO-DIMM. Almacenamiento Primario: Primario: 1TB HDD SATA 2.5". Almacenamiento secundario: 480GB M.2 NVMe™ PCIe® 3.0 SSD.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca: Dell<br>Línea: Inspiron<br>Modelo: 3501<br>Memoria RAM: 4 GB<br>Tipo de memoria RAM: DDR4<br>Resolución de la pantalla: 1366 px x 768 px<br>Tarjeta gráfica: Intel UHD Graphics G1.
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/dell2.png" class="imagenLenovo" alt="Notebook Dell Inspiron 15">
-            <h3>Notebook Dell 15</h3>
-            <p class="precio">$125.450</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca: Dell<br>Línea: Inspiron<br>Modelo: 5593<br>Memoria RAM: 8 GB<br>Tipo de memoria RAM: DDR4<br>Resolución de la pantalla: 1920 x 1080 px<br>GeForce MX230 2GB.
-            </p>
-          </div>
-        </article>
-      </div>
-    <div class="contenedorProducto">
-      <article class="caja cajaColor">
-          <div class="lado frente">  
-            <img src="../multimedia/imagenes/dell3.png" class="imagenLenovo" alt="Notebook Dell Latitude 3510">
-            <h3>Notebook Dell 3510</h3>
-            <p class="precio">$218.500</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-               Marca: Dell<br>Línea: Latitude<br>Modelo: 3510<br>Memoria RAM: 8 GB<br>Tipo de memoria RAM: DDR4<br>Resolución de la pantalla: 1920 px x 1080 px<br>Tarjeta gráfica: NVIDIA GeForce MX230.
-            </p>
-          </div>
-      </article>
-    </div>
-    </div>
+      </div>  
     </section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-          </div>
+    <div class="container">
+      <section class="customer-logos slider">
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
+        </div>     
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
         </div>
-      </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+      </section>
     </div>
-    
     <footer class="bg-danger">
       <div class="container">
         <div class="row">
@@ -165,5 +373,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+    <script src="../js/script.js"></script> <!-- Js Botones-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Carrusel Logo-->
+    <script src="../js/main.js"></script> <!-- Js Carrusel-->
 </body>
 </html> <!-- Fin de nuestra pagina -->
