@@ -247,6 +247,15 @@ a:hover{
   margin-bottom: 30px;
 }
 
+.itemFuente1{
+   padding: 40px;
+}
+
+.itemFuente1 img{
+   margin-bottom: 20px;
+}
+
+
 
 .icon-list{
     position: absolute;
