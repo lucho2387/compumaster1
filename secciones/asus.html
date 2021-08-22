@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!-- Carrusel Logo -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body><!-- Cuerpo de nuestra pagina -->
@@ -68,85 +69,291 @@
         </div>
       </nav>
     </header>
-    <h2 class="notebooks color1">Notebooks</h2>
     <main> <!-- Contenido principal -->
-      <nav>
-        <ul class="categorias">
-            <li><a href="../secciones/hp.html">HP</a></li>
-            <li><a href="../secciones/tuequipo.html">Lenovo</a></li>
-              <ul class="marcaLenovo submenu">
-                  <li><a href="../secciones/paginaenconstruccion.html">T14s</a></li>
-                  <li><a href="../secciones/paginaenconstruccion.html">T15</a></li>
-              </ul>
-            <li><a href="../secciones/dell.html">Dell</a></li>
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/asus.html">Asus</a></li>
-            <li><a href="../secciones/bangho.html">Bangho</a></li>
-        </ul>
-      </nav>
+      <div class = "main-title">
+          <!--<h1>LISTA DE PRODUCTOS</h1>-->
+          <h3 style="color: red; padding-top:100px;">NOTEBOOK HP</h3>
+      </div>
+      <!--AGREGADO-->
+      <div class = "filter-btns">
+          <button type = "button" class = "filter-btn"><a href="../secciones/hp.html">HP</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/tuequipo.html">Lenovo</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/dell.html">Dell</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/asus.html">Asus</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/bangho.html">Bangho</a></button>
+      </div>
     </main>
-    <section class="contenedorMadre margenNotebook">
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/asus1.png" class="imagenLenovo lenovoTs14" alt="Notebook Asus X509ma">
-            <h3>Notebook VivoBook</h3>
-            <p class="precio">$67.999</p>
+    <section>
+      <div class = "main-wrapper">
+          <div class = "container">
+              <div class = "display-style-btns">
+                  <button type = "button" id = "grid-active-btn">
+                      <i class = "fas fa-th"></i>
+                  </button>
+                  <button type = "button" id = "details-active-btn">
+                      <i class = "fas fa-list-ul"></i>
+                  </button>
+              </div>
+              <div class = "item-list">
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemAsus1">
+                          <img src = "../multimedia/imagenes/asus1.png" alt="Notebook Asus">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook VivoBook</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$67.899</span>
+                          </div>
+                          <p>Marca: Asus. Línea: VivoBook. Modelo: 90NB0Q32-M05560. Memoria RAM: 4 GB. Tipo de memoria RAM: DDR4. Resolución de la pantalla: 1366 px x 768 px. Tarjeta gráfica: Intel UHD Graphics 600.</p>
+                           <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemAsus2">
+                          <img src = "../multimedia/imagenes/asus2.png" alt="Notebook Asus">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook X515</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$104.999</span>
+                              <span class = "old-price">$106.000</span>
+                          </div>
+                          <p>Marca: Asus. Línea: X515. Modelo: X515EA-BQ259. Memoria RAM: 8 GB. Tipo de memoria RAM: DDR4. Resolución de la pantalla: 1920 x 1080 px.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/asus3.png" alt="Notebook Asus">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail detalleMonitor3">
+                          <a href = "#" class = "item-name">Notebook Zenbook</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$109.999</span>
+                          </div>
+                          <p>Marca: Asus. Línea: Zenbook. Modelo: UX482EG-KA186T. Memoria RAM: 16 GB. Tipo de memoria RAM: DDR4. Resolución de la pantalla: 1920 x 1080 px. Tarjeta gráfica: NVIDIA GeForce MX450.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemDell4">
+                          <img src = "../multimedia/imagenes/asus4.png" alt="Notebook Asus">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Asus Zenbook Ux425</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$149.899</span>
+                          </div>
+                          <p>Notebook Asus Zenbook UX425 14" FHD Intel Core I5. Modelo: UX425EA-BM004T. Procesador: Intel® Core™ i5-1135G7, caché de 8 MB, hasta 4,20 GHz, con IPU. Memoria: 8GB DDR4. Almacenamiento Primario: 512GB M.2. Gráfica: Intel UHD Graphics.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/asus5.png" alt="Notebook Asus">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Asus Zenbook Ux482</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$219.999</span>
+                          </div>
+                          <p>Notebook ZenBook UX482. Modelo: UX482EG-KA186T. Procesador: Intel Core i5-1135G7 Processor 2.4 GHz (8M Cache, up to 4.2 GHz, 4 cores). Memoria: 16GB LPDDR4X on board. Almacenamiento: 512GB M.2 NVMe™ PCIe® 3.0 SSD. Gráfica: NVIDIA® GeForce® MX450. Pantalla: 14" FHD (1920 x 1080) 16:9 IPS-level Panel.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemAsus6">
+                          <img src = "../multimedia/imagenes/asus6.png" alt="Notebook Asus">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Asus Intel Core I3</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$85.999</span>
+                          </div>
+                          <p>Notebook Asus X515. Modelo: X515EA-BQ085. Procesador: Intel® Core™ i3-1115G4 Processor 3.0 GHz (6M Cache, up to 4.1 GHz, 2 cores). Memoria: 8GB DDR4. Almacenamiento Primario: 256GB M.2 NVMe™ PCIe® 3.0 SSD. Pantalla: 15,6” FHD (1920 x 1080) 16:9 IPS-Level / Anti Glare.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemAsus7">
+                          <img src = "../multimedia/imagenes/asus7.png" alt="Notebook Asus">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Asus Tuf Dash</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$299.999</span>
+                          </div>
+                          <p>Modelo: FX516PR. Línea: Dash. Marca: Asus. Procesador: Intel Core i7 -11370H Velocidad Máxima: 4.8 GHz. Placa de video: NVIDIA GeForce RTX 3070 8GB GDDR6. Memoria Ram: 16GB DDR4-3200 RAM. Capacidad máxima Ram: 20GB Máx. Disco: 1TB Solid State Drive.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemAsus8">
+                          <img src = "../multimedia/imagenes/asus8.png" alt="Notebook Asus">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Asus Vivobook Amd</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$149.999</span>
+                              <span class = "old-price">$151.200</span>
+                          </div>
+                          <p>Procesador: Procesador AMD Ryzen 7 3700U a 2,3 GHz (3ª generación, hasta 4 GHz, caché de 4 MB, 4 núcleos). Almacenamiento: 512GB PCIe SSD (unidad de estado sólido). Memoria: 12 GB DDR4 RAM (4 GB integrada + 8 GB SO-DIMM). Gráficos: Gráficos integrados AMD RX Vega 10. Pantalla: 17.3 "HD + (1600x900) 60Hz Pantalla 16: 9. Modelo: ASU Vivobook X712DA-202.MV.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemDell9">
+                          <img src = "../multimedia/imagenes/asus9.png" alt="Notebook Asus">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Asus Vivobook Core I5</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$106.999</span>
+                          </div>
+                          <p>Procesador: Intel® Core™ i5 1035G1, 1 GHz Base, 3.5 GHz Turbo boost, 6Mb Cache, 4 Nucleos y 8 subprocesos. Placa de Video: Intel UHD G1. Memoria Ram: 8 GB DDR4. Disco Solido: 256 Gb. Pantalla: 15.6" diagonal Full HD Touch.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca: Asus<br>Línea: VivoBook<br>Modelo: 90NB0Q32-M05560<br>Memoria RAM: 4 GB<br>Tipo de memoria RAM: DDR4<br>Resolución de la pantalla: 1366 px x 768 px<br>Tarjeta gráfica: Intel UHD Graphics 600.
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/asus2.png" class="imagenLenovo" alt="Notebook Asus Intel">
-            <h3>Notebook X515</h3>
-            <p class="precio">$104.999</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca: Asus<br>Línea: X515<br>Modelo: X515EA-BQ259<br>Memoria RAM: 8 GB<br>Tipo de memoria RAM: DDR4<br>Resolución de la pantalla: 1920 x 1080 px.
-            </p>
-          </div>
-        </article>
-      </div>
-    <div class="contenedorProducto">
-      <article class="caja cajaColor">
-          <div class="lado frente">  
-            <img src="../multimedia/imagenes/asus3.png" class="imagenLenovo" alt="Notebook HP 14">
-            <h3>Notebook Zenbook</h3>
-            <p class="precio">$109.999</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-               Marca: Asus<br>Línea: Zenbook<br>Modelo: UX482EG-KA186T<br>Memoria RAM: 16 GB<br>Tipo de memoria RAM: DDR4<br>Resolución de la pantalla: 1920 x 1080 px<br>Tarjeta gráfica: NVIDIA GeForce MX450.
-            </p>
-          </div>
-      </article>
-    </div>
-    </div>
+      </div>  
     </section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-          </div>
+    <div class="container">
+      <section class="customer-logos slider">
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
+        </div>     
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
         </div>
-      </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+      </section>
     </div>
-    
     <footer class="bg-danger">
       <div class="container">
         <div class="row">
@@ -165,5 +372,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+    <script src="../js/script.js"></script> <!-- Js Botones-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Carrusel Logo-->
+    <script src="../js/main.js"></script> <!-- Js Carrusel-->
 </body>
 </html> <!-- Fin de nuestra pagina -->
