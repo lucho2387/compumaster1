@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!-- Carrusel Logo -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body><!-- Cuerpo de nuestra pagina -->
@@ -67,86 +68,293 @@
             </div>
         </div>
       </nav>
-    </header>
-    <h2 class="notebooks color1">Notebooks</h2>
+    </header> 
     <main> <!-- Contenido principal -->
-      <nav>
-        <ul class="categorias">
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/hp.html">HP</a></li>
-            <li><a href="../secciones/tuequipo.html">Lenovo</a></li>
-              <ul class="marcaLenovo submenu">
-                  <li><a href="../secciones/paginaenconstruccion.html">T14s</a></li>
-                  <li><a href="../secciones/paginaenconstruccion.html">T15</a></li>
-              </ul>
-            <li><a href="../secciones/dell.html">Dell</a></li>
-            <li><a href="../secciones/asus.html">Asus</a></li>
-            <li><a href="../secciones/bangho.html">Bangho</a></li>
-        </ul>
-      </nav>
+      <div class = "main-title">
+          <!--<h1>LISTA DE PRODUCTOS</h1>-->
+          <h3 style="color: red; padding-top:100px;">NOTEBOOK HP</h3>
+      </div>
+      <!--AGREGADO-->
+      <div class = "filter-btns">
+          <button type = "button" class = "filter-btn"><a href="../secciones/hp.html">HP</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/tuequipo.html">Lenovo</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/dell.html">Dell</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/asus.html">Asus</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/bangho.html">Bangho</a></button>
+      </div>
     </main>
-    <section class="contenedorMadre margenNotebook">
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/hp1.png" class="imagenLenovo lenovoTs14" alt="Notebook HP Stream">
-            <h3>Notebook Hp Stream</h3>
-            <p class="precio">$49.999</p>
+    <section>
+      <div class = "main-wrapper">
+          <div class = "container">
+              <div class = "display-style-btns">
+                  <button type = "button" id = "grid-active-btn">
+                      <i class = "fas fa-th"></i>
+                  </button>
+                  <button type = "button" id = "details-active-btn">
+                      <i class = "fas fa-list-ul"></i>
+                  </button>
+              </div>
+              <div class = "item-list">
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemHp1">
+                          <img src = "../multimedia/imagenes/hp1.png" alt="Notebook HP">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook Hp Stream</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$49.999</span>
+                          </div>
+                          <p>Marca: HP. Línea: Stream. Modelo: 14-AX112LA. Memoria RAM: 4 GB. Tipo de memoria RAM: DDR4. Resolución de la pantalla: 1366 px x 768 px. Tarjeta gráfica: Intel UHD Graphics 600.</p>
+                           <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/hp2.png" alt="Notebook HP">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook Hp 15</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$82.999</span>
+                              <span class = "old-price">$83.500</span>
+                          </div>
+                          <p>Marca: HP. Línea: ProBook. Modelo: 15-gw0015la. Memoria RAM: 8 GB. Tipo de memoria RAM: DDR4. Resolución de la pantalla: 1366 px x 768 px. AMD Radeon.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/hp3.png" alt="Notebook HP">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail detalleMonitor3">
+                          <a href = "#" class = "item-name">Notebook HP 14</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$109.999</span>
+                          </div>
+                          <p>Marca: HP. Línea: Consumo. Modelo: 14-CF2078LA. Memoria RAM: 8 GB. Tipo de memoria RAM: DDR4. Resolución de la pantalla: 1366 px x 768 px. Tarjeta gráfica: Intel UHD Graphics 600.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemHp4">
+                          <img src = "../multimedia/imagenes/hp4.png" alt="Notebook HP">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook HP 15</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$66.699</span>
+                          </div>
+                          <p>Procesador Intel Pentium Gold. Memoria RAM de 4GB. Pantalla LED de 15.6". Resolución de 1366x768 px. Placa de video Intel UHD Graphics. Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Modo de sonido Stereo.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/hp5.png" alt="Notebook HP">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook Hp 250 G7</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$94.741</span>
+                              <span class = "old-price">$95.000</span>
+                          </div>
+                          <p>Procesador Intel® Core™ i5-1035G1. Frecuencia base de 1,0 GHz, hasta 3,6 GHz con tecnología Turbo Boost de Intel 6 MB de caché L3 y 4 núcleos. Gráficos Intel UHD 620. Memoria RAM 8GB. Almacenamiento 1TB HDD.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemHp6">
+                          <img src = "../multimedia/imagenes/hp6.png" alt="Notebook HP">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook Hp Ryzen 5</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$139.999</span>
+                          </div>
+                          <p>ModelBrand HP. Model Pavilion 183G1UA. Quick InfoColor Blue Operating System Windows 10 S. CPU AMD Ryzen 5 4500U Processor (6-core, 2.3 GHz Up To 4.0 GHz, 8 MB Cache). Screen 15.6-inch Diagonal FHD (1920 x 1080), IPS, Micro-edge, BrightView, 250 nits, 45% NTSC Display. Memory 8GB. Storage 512GB SSD. CPU Speed 2.30 GHz. Number of Cores 6-core Processor. Max Memory Supported 32 GB.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemHp7">
+                          <img src = "../multimedia/imagenes/hp7.png" alt="Notebook HP">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook HP Elite I7</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$299.999</span>
+                          </div>
+                          <p>Procesador : ELITE SMART MULTICORE i7 1065 DECIMA GENERACION TURBO BOOST 4.0GHZ. O RYZEN MULTI CORE. Memoria Ram : 32 GB RAM DDR4. Placa Grafica ATI RADEON R 12GB - Memoria de Video 12GB. Disco Rigido : 1TB + 248GB SSD. Pantalla : LED 17.3 full hd IPS. Puertos Ethernet 10/100/1000 Gigabit Ethernet LAN (RJ-45 connector). Conectividad Inalambrica : WI-FI 802.11b/g/n WLAN - WIFI.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/hp8.png" alt="Notebook HP">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook Hp I3</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$72.999</span>
+                              <span class = "old-price">$73.500</span>
+                          </div>
+                          <p>Computadora portátil HP 14-dq2055wm. Microprocesador Intel® Core ™ i3-1115G4 (hasta 4,1 GHz con tecnología Intel® Turbo Boost, 6 MB de caché L3, 2 núcleos). Chipset SoC integrado Intel®. Memoria, estándar 8 GB de RAM DDR4-2666 MHz (2 x 4 GB). Gráficos de video Gráficos Intel® UHD. Integrado Disco duro SSD PCIe® NVMe ™ M.2 de 256 GB. Unidad óptica. Unidad óptica no incluida. Monitor 14 "en diagonal, FHD (1920 x 1080), microborde, antirreflejo, 250 nits, 45%.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemHp9">
+                          <img src = "../multimedia/imagenes/hp9.png" alt="Notebook HP">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Notebook Hp 250 I3</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$80.386</span>
+                          </div>
+                          <p>Procesador Intel® Core™ i3-1005G1 con gráficos Intel® UHD (frecuencia base de 1,2 GHz, hasta 3,4 GHz con tecnología Intel® Turbo Boost, 4 MB de caché y 2 núcleos). MEMORIA 8GB DDR4. UNIDAD INTERNA SSD 240GB M2. HDD 1TB. Pantalla con retroiluminación WLED HD SVA antirreflectante, de 15,6" en diagonal, 220 nits, 45 % de NTSC (1366 x 768).</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca: HP<br>Línea: Stream<br>Modelo: 14-AX112LA<br>Memoria RAM: 4 GB<br>Tipo de memoria RAM: DDR4<br>Resolución de la pantalla: 1366 px x 768 px<br>Tarjeta gráfica: Intel UHD Graphics 600.
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/hp2.png" class="imagenLenovo" alt="Notebook Hp 15">
-            <h3>Notebook Hp 15</h3>
-            <p class="precio">$82.999</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca: HP<br>Línea: ProBook<br>Modelo: 15-gw0015la<br>Memoria RAM: 8 GB<br>Tipo de memoria RAM: DDR4<br>Resolución de la pantalla: 1366 px x 768 px<br>AMD Radeon.
-            </p>
-          </div>
-        </article>
-      </div>
-    <div class="contenedorProducto">
-      <article class="caja cajaColor">
-          <div class="lado frente">  
-            <img src="../multimedia/imagenes/hp3.png" class="imagenLenovo" alt="Notebook HP 14">
-            <h3>Notebook HP 14</h3>
-            <p class="precio">$109.999</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-               Marca: HP<br>Línea: Consumo<br>Modelo: 14-CF2078LA<br>Memoria RAM: 8 GB<br>Tipo de memoria RAM: DDR4<br>Resolución de la pantalla: 1366 px x 768 px<br>Tarjeta gráfica: Intel UHD Graphics 600.
-            </p>
-          </div>
-      </article>
-    </div>
-    </div>
+      </div>  
     </section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-          </div>
+    <div class="container">
+      <section class="customer-logos slider">
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
+        </div>     
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
         </div>
-      </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+      </section>
     </div>
-    
     <footer class="bg-danger">
       <div class="container">
         <div class="row">
@@ -165,5 +373,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+    <script src="../js/script.js"></script> <!-- Js Botones-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Carrusel Logo-->
+    <script src="../js/main.js"></script> <!-- Js Carrusel-->
 </body>
 </html> <!-- Fin de nuestra pagina -->
