@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!-- Carrusel Logo -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body><!-- Cuerpo de nuestra pagina -->
@@ -68,85 +69,292 @@
         </div>
       </nav>
     </header>
-    <h2 class="notebooks color1">Notebooks</h2>
     <main> <!-- Contenido principal -->
-      <nav>
-        <ul class="categorias">
-            <li><a href="../secciones/hp.html">HP</a></li>
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/tuequipo.html">Lenovo</a></li>
-              <ul class="marcaLenovo submenu">
-                  <li><a href="../secciones/paginaenconstruccion.html">T14s</a></li>
-                  <li><a href="../secciones/paginaenconstruccion.html">T15</a></li>
-              </ul>
-            <li><a href="../secciones/dell.html">Dell</a></li>
-            <li><a href="../secciones/asus.html">Asus</a></li>
-            <li><a href="../secciones/bangho.html">Bangho</a></li>
-        </ul>
-      </nav>
+      <div class = "main-title">
+          <!--<h1>LISTA DE PRODUCTOS</h1>-->
+          <h3 style="color: red; padding-top:100px;">NOTEBOOK HP</h3>
+      </div>
+      <!--AGREGADO-->
+      <div class = "filter-btns">
+          <button type = "button" class = "filter-btn"><a href="../secciones/hp.html">HP</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/tuequipo.html">Lenovo</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/dell.html">Dell</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/asus.html">Asus</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/bangho.html">Bangho</a></button>
+      </div>
     </main>
-    <section class="contenedorMadre margenNotebook">
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/lenovo1.jpg" class="imagenLenovo lenovoTs14" alt="Notebook Lenovo">
-            <h3>Lenovo ts14s</h3>
-            <p class="precio">$150.000</p>
+    <section>
+      <div class = "main-wrapper">
+          <div class = "container">
+              <div class = "display-style-btns">
+                  <button type = "button" id = "grid-active-btn">
+                      <i class = "fas fa-th"></i>
+                  </button>
+                  <button type = "button" id = "details-active-btn">
+                      <i class = "fas fa-list-ul"></i>
+                  </button>
+              </div>
+              <div class = "item-list">
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemLenovo1">
+                          <img src = "../multimedia/imagenes/lenovo1.jpg" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Lenovo ts14s</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$150.000</span>
+                          </div>
+                          <p>Marca: Lenovo. Procesador Intel Core i5.. Memoria RAM de 8GB.. Resolución de 1920x1080 px.. Es antirreflejo.. Placa de video Intel UHD Graphics.. Conexión wifi y bluetooth.</p>
+                           <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/lenovo2.jpg" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Lenovo ts15</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$182.00</span>
+                              <span class = "old-price">$183.500</span>
+                          </div>
+                          <p>Marca: Lenovo. Modelo: 20U4S4SY00. Pantalla: 15.6" HD (1366x768) TN 220nits Anti-glare. Procesador: Intel Core i3-10110U (2C / 4T, 2.1 / 4.1GHz, 4MB). Gráficos: Integrated Intel UHD Graphics. Almacenamiento: Disco SSD 256GB M.2 2242 PCIe 3.0x2 NVMe.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/lenovo3.jpg" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail detalleMonitor3">
+                          <a href = "#" class = "item-name">Lenovo ts15s</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$170.000</span>
+                          </div>
+                          <p>Marca: Lenovo.. 15.6" FHD (1920x1080), IPS Anti Reflejante.. Intel® Core™ i7-10850H. 32GB SO-DIMM DDR4 3200MHz. 1TB SSD (Solid State Drive), M.2, 2280, PCIe NVMe. NVIDIA® Quadro® T2000 4GB GDDR6. Intel® Wi-Fi 6 AX201, Wi-Fi 2x2 802.11ax & Bluetooth® 5.1.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/lenovo4.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Lenovo IdeaPad S145-15AST</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$114.699</span>
+                          </div>
+                          <p>Procesador AMD A9-Series. Memoria RAM de 8GB. Pantalla LCD de 15.6". Resolución de 1366x768 px. Es antirreflejo. Placa de video AMD Radeon R5. Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Posee pad numérico. Modo de sonido Dolby Audio, Stereo.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemLenovo5">
+                          <img src = "../multimedia/imagenes/lenovo5.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Lenovo IdeaPad S340-15API</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$88.118</span>
+                              <span class = "old-price">$90.200</span>
+                          </div>
+                          <p>Procesador AMD Ryzen 3. Memoria RAM de 8GB. Pantalla LCD de 15.6". Resolución de 1366x768 px. Es antirreflejo. Placa de video AMD Radeon Vega 3. Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Posee pad numérico. Modo de sonido Stereo.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemLenovo6">
+                          <img src = "../multimedia/imagenes/lenovo6.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Lenovo Ideapad 3</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$60.487</span>
+                          </div>
+                          <p>Laptop económica y rápida! Tiene disco SSD de 128gb lo cual la hace rapidísima! Ideal para trabajar o para el colegio. El modelo de esta notebook es 2020!. El teclado es en ingles, pero viene con Windows 10 S y se le puede cambiar el idioma del windows al español. MPN: 81WA00B1US.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/lenovo7.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Lenovo Amd Ryzen 7</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$139.999</span>
+                          </div>
+                          <p>Modelo de procesador / CPU: AMD Ryzen 7 3700U. Reloj base de la CPU: 2,3 GHz. Reloj de refuerzo de CPU: 4 GHz. Recuento de núcleos de CPU: 4 núcleos. Caché de nivel 3: 4 MB de caché L3 total. Recuento de subprocesos de la CPU: 8 hilos. Generación de CPU: Serie AMD Ryzen 3000. CPU / Procesador: AMD Ryzen 7. RAM: 12 GB de RAM. Canales RAM: (8GB + 4GB).</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemLenovo8">
+                          <img src = "../multimedia/imagenes/lenovo8.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Lenovo Celeron 14</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$89.000</span>
+                              <span class = "old-price">$90.500</span>
+                          </div>
+                          <p>Product ideapad S145-14IWL. Processor Intel Celeron 4205U (2C / 2T, 1.8GHz, 2MB). Graphics Integrated Intel UHD Graphics. Memory 8GB SO-DIMM DDR4-2133. Storage 480GB SSD 2.5". Operating System Windows 10 Home 64, Spanish.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemLenovo9">
+                          <img src = "../multimedia/imagenes/lenovo9.png" alt="Notebook Lenovo">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a href = "#" class = "item-name">Amd Ryzen 5 5500u</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$105.000</span>
+                          </div>
+                          <p>Notebook Lenovo Idepad 3 - 15ALC6 - 82KU003NUS. Procesador AMD Ryzen 5 5500U (Base 2.1Ghz a 4Ghz). Video AMD Radeon. 8 GB de ram DDR4. Disco Solido 256GB Nvme PCIe. Teclado en INGLES con pad numerico integrado. Pantalla de 15.6" FHD TN (1920 x 1080).</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca: Lenovo<br>Procesador Intel Core i5.<br>Memoria RAM de 8GB.<br>Resolución de 1920x1080 px.<br>Es antirreflejo.<br>Placa de video Intel UHD Graphics.<br>Conexión wifi y bluetooth.
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/lenovo2.jpg" class="imagenLenovo" alt="Notebook Lenovo">
-            <h3>Lenovo ts15</h3>
-            <p class="precio">$182.000</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca: Lenovo<br>Modelo: 20U4S4SY00<br>Pantalla: 15.6" HD (1366x768) TN 220nits Anti-glare<br>Procesador: Intel Core i3-10110U (2C / 4T, 2.1 / 4.1GHz, 4MB)<br>Gráficos: Integrated Intel UHD Graphics<br>Almacenamiento: Disco SSD 256GB M.2 2242 PCIe 3.0x2 NVMe
-            </p>
-          </div>
-        </article>
-      </div>
-    <div class="contenedorProducto">
-      <article class="caja cajaColor">
-          <div class="lado frente">  
-            <img src="../multimedia/imagenes/lenovo3.jpg" class="imagenLenovo" alt="Notebook Lenovo">
-            <h3>Lenovo ts15s</h3>
-            <p class="precio">$170.000</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca: Lenovo.<br>15.6" FHD (1920x1080), IPS Anti Reflejante.<br>Intel® Core™ i7-10850H<br>32GB SO-DIMM DDR4 3200MHz<br>1TB SSD (Solid State Drive), M.2, 2280, PCIe NVMe<br>NVIDIA® Quadro® T2000 4GB GDDR6<br>Intel® Wi-Fi 6 AX201, Wi-Fi 2x2 802.11ax & Bluetooth® 5.1
-            </p>
-          </div>
-      </article>
-    </div>
-    </div>
+      </div>  
     </section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-          </div>
+    <div class="container">
+      <section class="customer-logos slider">
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
+        </div>     
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
         </div>
-      </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+      </section>
     </div>
-    
     <footer class="bg-danger">
       <div class="container">
         <div class="row">
@@ -165,5 +373,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+    <script src="../js/script.js"></script> <!-- Js Botones-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Carrusel Logo-->
+    <script src="../js/main.js"></script> <!-- Js Carrusel-->
 </body>
 </html> <!-- Fin de nuestra pagina -->
