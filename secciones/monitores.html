@@ -13,6 +13,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body> <!--Cuerpo de nuestra pagina-->
@@ -67,110 +68,295 @@
             </div>
         </div>
       </nav>
-    </header>
-   <main id="mainCategorias"> <!-- Contenido principal --> <!-- Bloque 2 (mainCategorias)-->
-      <h2 class="mainCategorias__titulo">Categorias</h2> 
-      <nav class="mainCategorias__navegacion"> 
-         <ul>
-            <li><a href="../secciones/placaMadre.html">Motherboard</a></li>
-            <li><a href="../secciones/productos.html" class="procesadores">Pocesadores</a>
-               <ul class="submenu">
-                  <li><a href="../secciones/paginaenconstruccion.html">Amd</a></li>
-                  <li><a href="../secciones/paginaenconstruccion.html">Intel</a></li>
-               </ul>
-            </li>  
-            <li><a href="../secciones/coolers.html">Coolers</a></li>
-            <li><a href="../secciones/memoriasram.html">Memorias rams</a></li>
-            <li><a href="../secciones/almacenamiento.html">Almacenamiento</a></li>
-            <li><a href="../secciones/fuentes.html">Fuentes</a></li>
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/monitores.html">Monitores</a></li>
-            <li><a href="../secciones/gabinetes.html">Gabinetes</a></li>
-            <li><a href="../secciones/placadevideo.html">Placas de video</a></li>
-            <li><a href="../secciones/perifericos.html">Perifericos</a></li>
-         </ul>
-      </nav>
-      <section id="contenedorMadre">
-         <div class="contenedorProducto">
-            <div class="caja"> <!-- Bloque 3 (caja)-->
-               <div class="lado caja__frente"> 
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/monitor1.png" alt="Monitor gamer Samsung">
-                  <h3 class="caja__frente--titulo color3">Samsung F24T35 led 24</h3> 
-                  <div class="caja__frente--borde"></div> <!-- Operacion Extend 3 -->
-                  <p class="caja__frente--parrafo parrafo-2">$25.999</p> 
-               </div>
-               <div class="lado caja__atras"> 
-               <div class="caja__atras--borde"></div> <!-- Operacion Extend 3 -->
-                  <h4 class="caja__atras--titulo">Especificaciones</h4> 
-                  <p class="caja__atras--especificacion"> 
-                    Pantalla led de 24 "<br>Tiene una resolución de 1920px-1080px<br>Relación de aspecto de 16:9<br>Panel IPS<br>Su brillo es de 250cd/m²<br>Tipos de conexión: D-Sub, HDMI 1.4
-                  </p> 
-               </div>
+   </header>
+   <main id="mainCategorias"> <!-- Contenido principal -->
+    <div class = "main-wrapper">
+        <div class = "container">
+            <div class = "main-title">
+                <!--<h1>LISTA DE PRODUCTOS</h1>-->
+                <h3 style="color: red; padding-top:100px;">PERIFERICOS</h3>
             </div>
-      </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado caja__frente">
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/monitor2.png" class="ryzenImagen5" alt="Monitor gamer BenQ">
-                  <h3 class="caja__frente--titulo color4">BenQ GW2480 led 24 </h3>
-                  <div class="caja__frente--borde"></div> <!-- Operacion Extend 3 -->
-                  <p class="caja__frente--parrafo">$27.990</p>
-               </div>
-               <div class="lado caja__atras">
-                  <div class="caja__atras--borde"></div> <!-- Operacion Extend 3 -->
-                  <h4 class="caja__atras--titulo">Especificaciones</h4>
-                  <p class="caja__atras--especificacion">
-                    Pantalla led de 24<br>Tiene una resolución de 1920px-1080px<br>Relación de aspecto de 16:9<br>Panel IPS<br>Su brillo es de 250cd/m²<br>Tipos de conexión: DisplayPort, HDMI 1.4, D-Sub<br>Audio line in, Jack 3.5 mm<br>Altavoces incluidos
-                  </p>
-               </div>
+            <!--AGREGADO-->
+            <div class = "filter-btns">
+                <button type = "button" class = "filter-btn"><a href="productos.html">Procesadores</a></button>
+                <button type = "button" class = "filter-btn"><a href="placaMadre.html">Placa Madre</a></button>
+                <button type = "button" class = "filter-btn"><a href="placadevideo.html">Placa de Video</a></button>
+                <button type = "button" class = "filter-btn"><a href="memoriasram.html">Memoria Ram</a></button>
+                <button type = "button" class = "filter-btn"><a href="perifericos.html">Perifericos</a></button>
+                <button type = "button" class = "filter-btn"><a href="monitores.html">Monitores</a></button>
+                <button type = "button" class = "filter-btn"><a href="gabinetes.html">Gabinetes</a></button>
+                <button type = "button" class = "filter-btn"><a href="fuentes.html">Fuentes</a></button>
             </div>
-         </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado caja__frente">
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/monitor3.png" alt="Monitor gamer curvo Samsung">
-                  <div class="caja__frente--borde imagen--borde"></div> <!-- Operacion Extend 3 -->
-                  <h3 class="caja__frente--titulo color2">Samsung Odyssey led 24</h3>
-                  <p class="caja__frente--parrafo">$41.9999</p>
-               </div>
-               <div class="lado caja__atras">
-                  <h4 class="caja__atras--titulo">Especificaciones</h4>
-                  <p class="caja__atras--especificacion">
-                    Pantalla led de 24<br>Curvo<br>Tiene una resolución de 1920px-1080px<br>Relación de aspecto de 16:9<br>Panel VA<br>Su brillo es de 250cd/m²<br>Tipos de conexión: 2 HDMI 1.4, DisplayPort 1.2, Jack 3.5 mm
-                  </p>
-               </div>
+            <div class = "display-style-btns">
+                <button type = "button" id = "grid-active-btn">
+                    <i class = "fas fa-th"></i>
+                </button>
+                <button type = "button" id = "details-active-btn">
+                    <i class = "fas fa-list-ul"></i>
+                </button>
             </div>
-         </div>
-         <div class="contenedorProducto">
-            <div class="caja">
-               <div class="lado caja__frente">
-                  <img class="caja__frente--imagen" src="../multimedia/imagenes/monitor4.png" class="ryzenImagen9" alt="Monitor gamer curvo Asus Tuf">
-                  <h3 class="caja__frente--titulo color1">Asus Tuf Gaming VG24VQ</h3>
-                  <div class="caja__frente--borde"></div> <!-- Operacion Extend 3 -->
-                  <p class="caja__frente--parrafo parrafo-1">$48.199</p>
-               </div>
-               <div class="lado caja__atras">
-                  <h4 class="caja__atras--titulo">Especificaciones</h4>
-                  <p class="caja__atras--especificacion">
-                    Pantalla led de 23.6<br>Curvo<br>Tiene una resolución de 1920px-1080px<br>Relación de aspecto de 16:9<br>Panel VA<br>Su brillo es de 350cd/m²<br>Tipos de conexión: Jack 3.5 mm, DisplayPort 1.2, 2 HDMI 1.4<br>Altavoces incluidos<br>Es giratorio y reclinable
-                  </p>
-               </div>
+            <div class = "item-list">
+                <div class = "item">
+                    <div class = "item-img mx-auto itemImgMonitor">
+                        <img src = "../multimedia/imagenes/monitor1.png" id="imagenCooler1">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Samsung F24T35</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$25.999</span>
+                            <span class = "old-price">$26.900</span>
+                        </div>
+                        <p>Pantalla led de 24 ".Tiene una resolución de 1920px-1080px. Relación de aspecto de 16:9.Panel IPS. Su brillo es de 250cd/m². Tipos de conexión: D-Sub, HDMI 1.4.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item ">
+                    <div class = "item-img mx-auto itemImgMonitor">
+                        <img src = "../multimedia/imagenes/monitor2.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">BenQ GW2480</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$27.990</span>
+                        </div>
+                        <p>Pantalla led de 24.Tiene una resolución de 1920px-1080px. Relación de aspecto de 16:9.Panel IPS.Su brillo es de 250cd/m². Tipos de conexión: DisplayPort, HDMI 1.4, D-Sub.Audio line in, Jack 3.5 mm. Altavoces incluidos.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto itemImgMonitor">
+                        <img src = "../multimedia/imagenes/monitor3.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Samsung Odyssey</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$41.999</span>
+                        </div>
+                        <p> Pantalla led de 24. Curvo. Tiene una resolución de 1920px-1080px. Relación de aspecto de 16:9.Panel VA. Su brillo es de 250cd/m².Tipos de conexión: 2 HDMI 1.4, DisplayPort 1.2, Jack 3.5 mm.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto itemImgMonitor">
+                        <img src = "../multimedia/imagenes/monitor4.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Asus Tuf Gaming</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$48.199</span>
+                            <span class = "old-price">$49.500</span>
+                        </div>
+                        <p>Pantalla led de 23.6. Curvo. Tiene una resolución de 1920px-1080px. Relación de aspecto de 16:9. Panel VA. Su brillo es de 350cd/m². Tipos de conexión: Jack 3.5 mm, DisplayPort 1.2, 2 HDMI 1.4. Altavoces incluidos. Es giratorio y reclinable.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto itemImgMonitor">
+                        <img src = "../multimedia/imagenes/monitor5.png" id="imagenMonitor3" class="imagen5">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Philips 243V5LHSB</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$19.395</span>
+                        </div>
+                        <p>Pantalla LCD de 23.6 ". Tiene una resolución de 1920px-1080px. Relación de aspecto de 16:9. Panel TFT. Su brillo es de 250cd/m². Tipos de conexión: DVI-D, HDMI, VGA/D-Sub.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto itemImgMonitor">
+                        <img src = "../multimedia/imagenes/monitor6.png" class="imagen6">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">LG 24MK430H</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$22.622</span>
+                        </div>
+                        <p>Pantalla led de 23.8 ". Tiene una resolución de 1920px-1080px. Relación de aspecto de 16:9. Panel IPS. Su brillo es de 250cd/m². Tipos de conexión: D-Sub, Jack 3.5 mm, HDMI 1.4.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto itemImgMonitor">
+                        <img src = "../multimedia/imagenes/monitor7.png">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Samsung F24T35</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$25.999</span>
+                        </div>
+                        <p>Pantalla led de 24 ". Tiene una resolución de 1920px-1080px. Relación de aspecto de 16:9. Panel IPS. Su brillo es de 250cd/m². Tipos de conexión: D-Sub, HDMI 1.4.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto itemImgMonitor">
+                        <img src = "../multimedia/imagenes/monitor8.png" class="imagen5">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Samsung C24F390FH</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$23.489</span>
+                            <span class = "old-price">$25.200</span>
+                        </div>
+                        <p>Pantalla led de 24 ". Curvo. Posee pantalla antirreflejo. Tiene una resolución de 1920px-1080px. Relación de aspecto de 16:9. Panel VA. Su brillo es de 250cd/m². Tipos de conexión: HDMI, VGA/D-Sub, Jack 3.5 mm.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class = "item">
+                    <div class = "item-img mx-auto itemImgMonitor">
+                        <img src = "../multimedia/imagenes/monitor9.png" class="imagen9">
+                        <div class = "icon-list">
+                            <button type = "button">
+                                <i class = "fas fa-sync-alt"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "fas fa-shopping-cart"></i>
+                            </button>
+                            <button type = "button">
+                                <i class = "far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "item-detail">
+                        <a href = "#" class = "item-name">Asus Eye Care</a>
+                        <div class = "item-price">
+                            <span class = "new-price">$31.899</span>
+                            <span class = "old-price">$33.500</span>
+                        </div>
+                        <p>Pantalla led de 27 ". Posee pantalla antirreflejo. Tiene una resolución de 1920px-1080px. Relación de aspecto de 16:9. Panel IPS.
+                         Su brillo es de 250cd/m². Tipos de conexión: VGA/D-Sub, HDMI.</p>
+                        <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                    </div>
+                </div>            
             </div>
-         </div>      
-      </section>
-   </main>
-   <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-          </div>
         </div>
-      </div>
+    </div>
+   </main>
+   <div class="container mx-auto">
+      <section class="customer-logos slider">
+        <div class="slide">
+          <img class="logoPublicidad mx-auto" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>    
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
+        </div>   
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logokingston.png" alt="Logo Kingston">
+        </div> 
+        <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+        </div>
+      </section>
    </div>
    <footer class="bg-danger">
       <div class="container">
@@ -190,5 +376,10 @@
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+   <script src="../js/script.js"></script> <!-- Js Botones-->
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Carrusel Logo-->
+   <script src="../js/main.js"></script> <!-- Js Carrusel-->
 </body>
 </html> <!-- Fin de nuestra pagina -->
