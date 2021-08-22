@@ -247,12 +247,8 @@ a:hover{
   margin-bottom: 30px;
 }
 
-.itemFuente1{
-   padding: 20px;
-}
-
 .itemFuente1 img{
-   margin-bottom: 10px;
+   width: 63%;
 }
 
 .itemFuente{
