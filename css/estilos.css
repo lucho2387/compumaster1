@@ -289,7 +289,7 @@ a:hover{
 .item-name{
     font-weight: 500;
     font-size: 25px;
-    color: #d3d3d3;
+    color: black;
     display: block;
     text-align: center;
 }
