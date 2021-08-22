@@ -248,14 +248,42 @@ a:hover{
 }
 
 .itemFuente1{
-   padding: 40px;
+   padding: 20px;
 }
 
 .itemFuente1 img{
-   margin-bottom: 20px;
+   margin-bottom: 10px;
 }
 
+.itemFuente{
+   width: 75%;
+}
 
+.itemFuente4 img{
+   margin-bottom: 30px;
+   width: 55%;
+}
+
+.itemFuente5{
+   padding: 10px;
+}
+
+.itemFuente5 img{
+   margin-bottom: 40px;
+}
+
+.itemFuente6{
+   margin: 20px;
+}
+
+.itemFuente6 img{
+   margin-bottom: 40px;
+}
+
+.itemFuente8 img{
+   margin-bottom: 30px;
+   width: 60%;
+}
 
 .icon-list{
     position: absolute;
