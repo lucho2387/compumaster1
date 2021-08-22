@@ -248,11 +248,12 @@ a:hover{
 }
 
 .itemFuente1{
-   padding: 40px;
+   padding: 20px;
 }
 
 .itemFuente1 img{
    margin-bottom: 10px;
+   width: 50%;
 }
 
 .itemFuente{
