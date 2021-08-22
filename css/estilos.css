@@ -188,7 +188,7 @@ a:hover{
     padding-top: 50px;
 }
 .item:hover{
-    box-shadow: 0 0 10px 1px rgba(0, 4, 4, 0.15);
+    box-shadow: 0 0 10px 1px red;
 }
 .item-img{
     position: relative;
