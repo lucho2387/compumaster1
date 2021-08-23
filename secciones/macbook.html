@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!-- Carrusel Logo -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body><!-- Cuerpo de nuestra pagina -->
@@ -33,7 +34,7 @@
                 </li>
                 <li class="nav-item active dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Productos
+                    Productos
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="../secciones/placaMadre.html">Motherboard</a></li>
@@ -68,82 +69,291 @@
         </div>
       </nav>
     </header>
-    <h2 class="notebooks color1">Notebooks</h2>
     <main> <!-- Contenido principal -->
-      <nav>
-        <ul class="categorias">
-            <li><a href="../secciones/hp.html">HP</a></li>
-            <li><a href="../secciones/tuequipo.html">Lenovo</a></li>
-            <li><a href="../secciones/dell.html">Dell</a></li>
-            <li><a href="../secciones/asus.html">Asus</a></li>
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/bangho.html">Bangho</a></li>
-        </ul>
-      </nav>
-    </main>
-    <section class="contenedorMadre margenNotebook">
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/macbook1.png" class="imagenLenovo lenovoTs14" alt="Apple Macbook Air">
-            <h3>Apple Macbook Air 13</h3>
-            <p class="precio">$134.999</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca Apple<br>Línea MacBook Air<br>Modelo A1466<br>Memoria RAM 8 GB<br>Tipo de memoria RAM DDR3<br>Resolución de la pantalla 1440 px x 900 px<br>Intel Core i5
-            </p>
-          </div>
-        </article>
+      <div class = "main-title">
+          <!--<h1>LISTA DE PRODUCTOS</h1>-->
+          <h2 style="color: red; padding-top:100px;">MACBOOK</h2>
       </div>
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/macbook2.png" class="imagenLenovo" alt="Apple Macbook Air 13">
-            <h3>Apple Macbook Air 13</h3>
-            <p class="precio">$193.199</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              Marca Apple<br>Línea MacBook Air<br>Modelo Air<br>Memoria RAM 8 GB<br>Capacidad del SSD 256 GB<br>Tamaño de la pantalla 13.3 pulgadas<br>Intel Core<br>Capacidad del SSD 256 GB
-            </p>
-          </div>
-        </article>
+      <!--AGREGADO-->
+      <div class = "filter-btns">
+          <button type = "button" class = "filter-btn"><a href="../secciones/hp.html">HP</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/tuequipo.html">Lenovo</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/dell.html">Dell</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/asus.html">Asus</a></button>
+          <button type = "button" class = "filter-btn"><a href="../secciones/bangho.html">Bangho</a></button>
       </div>
-    <div class="contenedorProducto">
-      <article class="caja cajaColor">
-          <div class="lado frente">  
-            <img src="../multimedia/imagenes/macbook3.png" class="imagenLenovo" alt="Apple Macbook Pro">
-            <h3>Apple Macbook Pro</h3>
-            <p class="precio">$524.721</p>
+  </main>
+  <section>
+      <div class = "main-wrapper">
+          <div class = "container">
+              <div class = "display-style-btns">
+                  <button type = "button" id = "grid-active-btn">
+                      <i class = "fas fa-th"></i>
+                  </button>
+                  <button type = "button" id = "details-active-btn">
+                      <i class = "fas fa-list-ul"></i>
+                  </button>
+              </div>
+              <div class = "item-list">
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/macbook1.png" alt="Macbook">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a class = "item-name">Apple Macbook Air 13</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$134.999</span>
+                          </div>
+                          <p>Marca Apple. Línea MacBook Air. Modelo A1466. Memoria RAM 8 GB. Tipo de memoria RAM DDR3. Resolución de la pantalla 1440 px x 900 px. Intel Core i5.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/macbook2.png" alt="Macbook">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a class = "item-name">Apple Macbook Air 13</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$193.199</span>
+                          </div>
+                          <p>Marca Apple. Línea MacBook Air. Modelo Air. Memoria RAM 8 GB. Capacidad del SSD 256 GB. Tamaño de la pantalla 13.3 pulgadas. Intel Core. Capacidad del SSD 256 GB.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemMac3">
+                          <img src = "../multimedia/imagenes/macbook3.png" alt="Macbook">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a class = "item-name">Apple Macbook Pro</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$524.721</span>
+                          </div>
+                          <p>Marca Apple. Línea MacBook Pro. Modelo A2141. Memoria Ram 16 GB. Tipo de memoria RAM GDDR6. Resolución de la pantalla 3072 px x 1920 px. Intel Core i9.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemMac4">
+                          <img src = "../multimedia/imagenes/macbook4.png" alt="Macbook">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a class = "item-name">Macbook Air Apple 2020</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$302.832</span>
+                          </div>
+                          <p>Pantalla Retina de 13.3 pulgadas (diagonal) retroiluminada por LED con tecnología IPS; resolución nativa de 2560 x 1600 a 227 pixeles por pulgada compatible con millones de colores. Resoluciones ajustadas compatibles: 1680 x 1050 / 1440 x 900 / 1024 x 640. Relación de aspecto de 16:10. Tecnología True Tone. Intel Core i3 de doble núcleo y 1.1 GHz (Turbo Boost de hasta 3.2 GHz) con 4 MB de caché L3.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/macbook5.png" alt="Macbook">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a class = "item-name">Apple Macbook Pro</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$529.999</span>
+                              <span class = "old-price">$531.000</span>
+                          </div>
+                          <p>Procesador Intel Core i7 de 6 núcleos o Intel Core i9 de 8 núcleos de novena generación. Brillante pantalla Retina de 16 pulgadas con tecnología True Tone (1). Touch Bar y Touch ID. Procesador gráfico AMD Radeon Pro 5300M o 5500M con memoria GDDR6. SSD ultrarrápido. Intel UHD Graphics 630. Sistema de seis bocinas con woofers con cancelación de fuerza. Cuatro puertos Thunderbolt 3 (USB-C). Hasta 11 horas de batería (2). Wi-Fi 802.11ac. Magic Keyboard retroiluminado. Trackpad Force Touch. macOS con un diseño impactante e intuitivo, que funciona a la perfección con tu iPhone. Disponible en color plata y gris espacial.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemMac6">
+                          <img src = "../multimedia/imagenes/macbook6.png" alt="Macbook">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a class = "item-name">Macbook Air 10th</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$219.999</span>
+                          </div>
+                          <p>Pantalla de 13.3 pulgadas (diagonal) retroiluminada por LED con tecnología IPS; resolución nativa de 2560 x 1600 a 227 pixeles por pulgada compatible con millones de colores. Resoluciones ajustadas compatibles: 1680 x 1050. Intel Core i5 de 4 núcleos y 1.1 GHz (Turbo Boost de hasta 3.5 GHz) con 6 MB de caché L3. SSD basado en PCIe de 512 GB. 8 GB de memoria LPDDR4X de 3733 MHz integrada.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto">
+                          <img src = "../multimedia/imagenes/macbook7.png" alt="Macbook">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a class = "item-name">Apple Macbook Pro</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$390.999</span>
+                          </div>
+                          <p>Sistema operativo: Mac OS. Procesador: Intel Core i5 de cuatro núcleos a 2 GHz. Tipo de memoria: LPDDR4x de 3733 MHz. Memoria total instalada: 16 GB. Resolución: 2560 x 1600. Tipo de panel IPS. Tamaño de pantalla: 13,3 ".</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto ">
+                          <img src = "../multimedia/imagenes/macbook8.png" alt="Macbook">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a class = "item-name">Macbook Air 2020</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$219.999</span>
+                              <span class = "old-price">$243.200</span>
+                          </div>
+                          <p>MacBook Air 13,3 PANTALLA RERINA + SENSOR ID ( 2020 ). Resolución de la pantalla 2880X1800. Línea del procesador Intel core i3 10ma GENERACION. Memoria RAM 8 GB. Tipo de memoria RAM DDR4. Tamaño de la pantalla 13.3 "</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+                  <div class = "item">
+                      <div class = "item-img mx-auto itemMac9">
+                          <img src = "../multimedia/imagenes/macbook9.png" alt="Macbook">
+                          <div class = "icon-list">
+                              <button type = "button">
+                                  <i class = "fas fa-sync-alt"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "fas fa-shopping-cart"></i>
+                              </button>
+                              <button type = "button">
+                                  <i class = "far fa-heart"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class = "item-detail">
+                          <a class = "item-name">Macbook Pro 16 I9</a>
+                          <div class = "item-price">
+                              <span class = "new-price">$599.999</span>
+                          </div>
+                          <p>Intel Core i9 de 8 núcleos y 2.3 GHz (Turbo Boost de hasta 4.8 GHz) con 16 MB de caché L3 compartida. SSD de 1 TB. 16 GB de memoria DDR4 de 2666 MHz integrada. AMD Radeon Pro 5500M con 4 GB de memoria GDDR6.</p>
+                          <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-                Marca Apple<br>Línea MacBook Pro<br>Modelo A2141<br>Memoria Ram 16 GB<br>Tipo de memoria RAM GDDR6<br>Resolución de la pantalla 3072 px x 1920 px<br>Intel Core i9
-            </p>
-            </p>
+      </div>  
+  </section>
+  <div class="container">
+      <section class="customer-logos p-5 slider">
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logo1.png" alt="Logo Logitech">
           </div>
-      </article>
-    </div>
-    </div>
-    </section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logo2.png" alt="Logo Amd">
           </div>
-        </div>
-      </div>
-    </div>
-    
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+          </div>
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logo4.png" alt="Logo Gigabyte">
+          </div>
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logo5.png" alt="Logo Hyperx">
+          </div>
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+          </div>
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logo7.png" alt="Logo Adata">
+          </div>
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logo8.png" alt="Logo Cooler Master">
+          </div>
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logo9.png" alt="Logo Republic Of Gamers">
+          </div>
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logo10.png" alt="Logo Western Digital">
+          </div>
+          <div class="slide">
+          <img class="logoPublicidad" src="../multimedia/imagenes/logo11.png" alt="Logo Zotac">
+          </div>
+      </section>
+  </div>
     <footer class="bg-danger">
       <div class="container">
         <div class="row">
@@ -162,5 +372,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+    <script src="../js/script.js"></script> <!-- Script Botones -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Carrusel Logo-->
+    <script src="../js/main.js"></script> <!-- Js Carrusel -->
 </body>
 </html> <!-- Fin de nuestra pagina -->
