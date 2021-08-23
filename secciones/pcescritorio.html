@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!-- Carrusel Logo -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- Estilos -->
 </head>
 <body><!-- Cuerpo de nuestra pagina -->
@@ -33,7 +34,7 @@
                 </li>
                 <li class="nav-item active dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Productos
+                    Productos
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="../secciones/placaMadre.html">Motherboard</a></li>
@@ -44,7 +45,7 @@
                     <li><a class="dropdown-item" href="../secciones/monitores.html">Monitor</a></li>
                     <li><a class="dropdown-item" href="../secciones/fuentes.html">Fuentes</a></li>
                     <li><a class="dropdown-item" href="../secciones/perifericos.html">Perifericos</a></li>
-                  </ul>
+                </ul>
                 </li>
                 <li class="nav-item active dropdown">
                   <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,7 +56,7 @@
                     <li><a class="dropdown-item" href="../secciones/dell.html">Dell</a></li>
                     <li><a class="dropdown-item" href="../secciones/tuequipo.html">Lenovo</a></li>
                     <li><a class="dropdown-item" href="../secciones/asus.html">Asus</a></li>
-                      <li><a class="dropdown-item" href="../secciones/bangho.html">Bangho</a></li>
+                    <li><a class="dropdown-item" href="../secciones/bangho.html">Bangho</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -68,103 +69,313 @@
         </div>
       </nav>
     </header>
-    <h2 class="notebooks color1">Notebooks</h2>
     <main> <!-- Contenido principal -->
-      <nav>
-        <ul class="categorias">
-            <li><a href="../secciones/hp.html">HP</a></li>
-            <li><a href="../secciones/tuequipo.html">Lenovo</a></li>
-              <ul class="marcaLenovo submenu">
-                  <li><a href="../secciones/paginaenconstruccion.html">T14s</a></li>
-                  <li><a href="../secciones/paginaenconstruccion.html">T15</a></li>
-              </ul>
-            <li><a href="../secciones/dell.html">Dell</a></li>
-            <li><a href="../secciones/asus.html">Asus</a></li>
-            <li class="mainCategorias__navegacion--color"><a href="../secciones/bangho.html">Bangho</a></li>
-        </ul>
-      </nav>
+        <div class = "main-title">
+            <!--<h1>LISTA DE PRODUCTOS</h1>-->
+            <h3 style="color: red; padding-top:100px;">PC ESCRITORIO</h3>
+        </div>
+        <!--AGREGADO-->
+        <div class = "filter-btns">
+            <button type = "button" class = "filter-btn"><a href="../secciones/hp.html">HP</a></button>
+            <button type = "button" class = "filter-btn"><a href="../secciones/tuequipo.html">Lenovo</a></button>
+            <button type = "button" class = "filter-btn"><a href="../secciones/dell.html">Dell</a></button>
+            <button type = "button" class = "filter-btn"><a href="../secciones/asus.html">Asus</a></button>
+            <button type = "button" class = "filter-btn"><a href="../secciones/bangho.html">Bangho</a></button>
+        </div>
     </main>
-    <section class="contenedorMadre margenNotebook">
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/pc1.png" class="imagenLenovo lenovoTs14" alt="Pc Gamer Armada">
-            <h3>Pc Gamer Armada</h3>
-            <p class="precio">$117.999</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              MICRO: RYZEN 5 3500<br>VIDEO: 2GB GT-730<br>MOTHER: ASUS A320 PRIME<br>DISCO RIGIDO: HD SSD 240GB SOLIDO <br>MEMORIA RAM: 8 GB 2666MHZ DDR4<br>GABINETE: NAXIDO NX6900<br>NCLUYE KIT DE TECLADO, MOUSE 
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="contenedorProducto">
-        <article class="caja cajaColor">
-          <div class="lado frente">
-            <img src="../multimedia/imagenes/pc2.png" class="imagenLenovo" alt="Pc Completa Intel I5">
-            <h3>Pc Completa Intel I5</h3>
-            <p class="precio">$147.899</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-              MICRO: INTEL i5 9400F 4.0GHZ<br>VIDEO: NVIDIA GEFORCE GTX 1050 Ti 4GB GDDR5<br>MOTHER: MSI<br>DISCO RIGIDO: 1000GB<br>MEMORIA RAM: 16GB 2400<br>GABINETE: ATX SENTEY x10<br>FUENTE: SENTEY LNZ 550 REAL
-            </p>
-          </div>
-        </article>
-      </div>
-    <div class="contenedorProducto">
-      <article class="caja cajaColor">
-          <div class="lado frente">  
-            <img src="../multimedia/imagenes/pc3.png" class="imagenLenovo" alt="Pc Gamer Core I5">
-            <h3>Pc Gamer Core I5</h3>
-            <p class="precio">$412.550</p>
-          </div>
-          <div class="lado atras">
-            <h4>Especificaciones</h4>
-            <p class="especificacion">
-                Procesador Intel Core i5 10400F<br>Mother B460M<br>Memoria RAM 16gb DDR4<br>Disco Solido SSD 480gb<br>Placa de Video Geforce RTX 3070 8GB<br>Gabinete ATX tipo Sentey J20<br>Fuente Certificada acorde al equipo
-            </p>
-            </p>
-          </div>
-      </article>
-    </div>
-    </div>
-    </section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-around m-5">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoamd.png" alt="Logo Amd">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logocorsair.png" alt="Logo Corsair">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logodell.png" alt="Logo Dell">
-              <img class="logoPublicidad" src="../multimedia/imagenes/logohp.jpg" alt="Logo HP">
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <footer class="bg-danger">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <p class="text-center text-white">Copyright - Todos los derechos reservados</p>
-            <p class="text-center text-white">Seguinos en todas nuestras redes</p>
-            <div class="d-flex justify-content-center align-item-center">
-              <a class="redes" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook text-Light"></i></a>
-              <a class="redes" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram text-Light"></i></a>
-              <a class="redes" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter text-Light"></i></a>
+    <section>
+        <div class = "main-wrapper">
+            <div class = "container">
+                <div class = "display-style-btns">
+                    <button type = "button" id = "grid-active-btn">
+                        <i class = "fas fa-th"></i>
+                    </button>
+                    <button type = "button" id = "details-active-btn">
+                        <i class = "fas fa-list-ul"></i>
+                    </button>
+                </div>
+                <div class = "item-list">
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/pc1.png" alt="Pc Escritorio Armada">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Pc Gamer Armada</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$117.999</span>
+                            </div>
+                            <p>MICRO: RYZEN 5 3500. VIDEO: 2GB GT-730. MOTHER: ASUS A320 PRIME. DISCO RIGIDO: HD SSD 240GB SOLIDO . MEMORIA RAM: 8 GB 2666MHZ DDR4. GABINETE: NAXIDO NX6900. NCLUYE KIT DE TECLADO, MOUSE.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto itemPc2">
+                            <img src = "../multimedia/imagenes/PC2.png" alt="Pc Escritorio Armada">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Pc Completa Intel I5</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$147.899</span>
+                            </div>
+                            <p>MICRO: INTEL i5 9400F 4.0GHZ. VIDEO: NVIDIA GEFORCE GTX 1050 Ti 4GB GDDR5. MOTHER: MSI. DISCO RIGIDO: 1000GB. MEMORIA RAM: 16GB 2400. GABINETE: ATX SENTEY x10. FUENTE: SENTEY LNZ 550 REAL.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto itemPc1">
+                            <img src = "../multimedia/imagenes/pc3.png" alt="Pc Escritorio Armada">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail detalleMonitor3">
+                            <a href = "#" class = "item-name">Pc Gamer Core I5</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$412.550</span>
+                            </div>
+                            <p>Procesador Intel Core i5 10400F. Mother B460M. Memoria RAM 16gb DDR4. Disco Solido SSD 480gb. Placa de Video Geforce RTX 3070 8GB. Gabinete ATX tipo Sentey J20. Fuente Certificada acorde al equipo.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/pc4.png" alt="Pc Escritorio Armada">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Pc Gamer Amd</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$82.849</span>
+                            </div>
+                            <p>Esta PC gamer AMD está preparada para iniciarse en el mundo de los juegos y el diseño gráfico, como así también para quienes buscan un alto rendimiento en tareas de oficina, comercio y hogar. La combinación del disco sólido de 240GB con 8GB de memoria, distribuidas a 2 de 4GB en dual channel, te permite potenciar el máximo rendimiento posible, otorga mayor velocidad y un gran almacenamiento, todo en su perfecta combinación. Microprocesador AMD ATHLON 3000G. Socket: AM4. Gráfico incorporado: RADEON VEGA 3.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto">
+                            <img src = "../multimedia/imagenes/pc5.png" alt="Pc Escritorio Armada">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Amd Intel Dual Core</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$45.999</span>
+                                <span class = "old-price">$47.002</span>
+                            </div>
+                            <p>MICRO: AMD E6010N Dual Core. MOTHER: GIGABYTE E6010N. DISCO ESTADO SOLIDO: SSD 120GB SATA3. MEMORIA RAM: 4GB 1600MHZ DDR3. GABINETE: ATX G18 POWER KIT FUENTE 500W. KIT: TECLADO USB, MOUSE USB Y PARLANTES POTENCIADOS. MONITOR: LED WIDESCREEN 18.5. SISTEMA OPERATIVO: WINDOWS 10 64bits.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto itemPc6">
+                            <img src = "../multimedia/imagenes/pc6.png" alt="Pc Escritorio Armada">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Pc Escritorio Gamer Ryzen</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$98.999</span>
+                            </div>
+                            <p>Procesador AMD Ryzen 3 3200G. Socket: AM4. Frecuencia: 3.6GHz - máx. 4GHz. Kit Gabinete, fuente 500w, teclado, mouse y parlantes. Monitor Lenovo HDMI 19" 61E0KAR6AR. Placa Madre Asrock A320M-HDV R4.0. Disco Sólido 240GB. Windows 10 64 Bits.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto itemBangho7">
+                            <img src = "../multimedia/imagenes/pc7.png" alt="Pc Escritorio Armada">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Pc Armada Gamer</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$259.999</span>
+                            </div>
+                            <p>MICRO: AMD RYZEN 7 3700X x8 nucleos 16 hilos. VIDEO: NVIDIA GEFORCE GTX 1660 6GB SUPER GDDR6. MOTHER: MSI A320M PROM M2 DDR4. DISCO ESTADO SOLIDO: SSD480 SATA3. MEMORIA RAM: 16GB 2666MHZ DDR4. GABINETE: ATX SENTEY F10 RGB. FUENTE: SENTEY SDP550 80 PLUS REALES.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto itemPc8">
+                            <img src = "../multimedia/imagenes/pc8.png" alt="Pc Escritorio Armada">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Pc Completa Intel I5</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$147.999</span>
+                                <span class = "old-price">$169.200</span>
+                            </div>
+                            <p>MICRO: INTEL i5 9400F 4.0GHZ 9NA GEN CON COOLER. VIDEO: NVIDIA GEFORCE GTX 1050 Ti 4GB GDDR5 OC HDMI. MOTHER: MSI/ASROCK/ECS H310M. DISCO RIGIDO: 1000GB 7200RPM SATA3. MEMORIA RAM: 16GB 2400/2666MHZ DDR4. GABINETE: ATX SENTEY x10 RGB POWER. FUENTE: SENTEY LNZ 550 REAL.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "item-img mx-auto itemPc9">
+                            <img src = "../multimedia/imagenes/pc9.png" alt="Pc Escritorio Armada">
+                            <div class = "icon-list">
+                                <button type = "button">
+                                    <i class = "fas fa-sync-alt"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                </button>
+                                <button type = "button">
+                                    <i class = "far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "item-detail">
+                            <a href = "#" class = "item-name">Pc Ryzen 3 2200g</a>
+                            <div class = "item-price">
+                                <span class = "new-price">$78.168</span>
+                            </div>
+                            <p>Kit Completo de Gabinete, fuente 500w, teclado, mouse y parlantes DX-ATX550-5905. Placa Madre Gigabyte GA-A320M-H. Memoria RAM DIMM DDR4 8GB. Disco Sólido 240GB ADATA, WD o Gigabyte. Monitor 19" Lenovo 61E0KAR6AR.</p>
+                            <button type = "button" class = "add-btn mx-auto">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>  
+    </section>
+    <div class="container">
+        <section class="customer-logos p-5 slider">
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo1.png" alt="Logo Logitech">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo2.png" alt="Logo Amd">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logoasus.png" alt="Logo Asus">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo4.png" alt="Logo Gigabyte">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo5.png" alt="Logo Hyperx">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logoryzen.jpg" alt="Logo Ryzen">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo7.png" alt="Logo Adata">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo8.png" alt="Logo Cooler Master">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo9.png" alt="Logo Republic Of Gamers">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo10.png" alt="Logo Western Digital">
+            </div>
+            <div class="slide">
+            <img class="logoPublicidad" src="../multimedia/imagenes/logo11.png" alt="Logo Zotac">
+            </div>
+        </section>
+    </div>
+    <footer class="bg-danger">
+        <div class="container">
+            <div class="row">
+            <div class="col">
+                <p class="text-center text-white">Copyright - Todos los derechos reservados</p>
+                <p class="text-center text-white">Seguinos en todas nuestras redes</p>
+                <div class="d-flex justify-content-center align-item-center">
+                <a class="redes" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook text-Light"></i></a>
+                <a class="redes" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram text-Light"></i></a>
+                <a class="redes" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter text-Light"></i></a>
+                </div>
+            </div>
+            </div>
         </div>
-      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c18d2dd627.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
+    <script src="../js/script.js"></script> <!-- Js Botones-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Carrusel Logo-->
+    <script src="../js/main.js"></script> <!-- Js Carrusel-->
 </body>
 </html> <!-- Fin de nuestra pagina -->
