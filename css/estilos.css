@@ -424,6 +424,24 @@ a:hover{
   width: 61%;
 }
 
+/*PAGINA MACBOOK*/
+
+.itemMac3 img{
+  width: 69%;
+}
+
+.itemMac4 img{
+  width: 64%;
+}
+
+.itemMac6 img{
+  width: 65%;
+}
+
+.itemMac9 img{
+  width: 44%;
+}
+
 .icon-list{
     position: absolute;
     bottom: -100px;
