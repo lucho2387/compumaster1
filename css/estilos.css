@@ -402,6 +402,28 @@ a:hover{
   width: 70%;
 }
 
+/*PAGINA PC ESCRITORIO*/
+
+.itemPc1 img{
+  width: 85%;
+}
+
+.itemPc2 img {
+  width: 71%;
+}
+
+.itemPc6 img {
+  width: 65%;
+}
+
+.itemPc8 img {
+  width: 63%;
+}
+
+.itemPc9 img {
+  width: 61%;
+}
+
 .icon-list{
     position: absolute;
     bottom: -100px;
