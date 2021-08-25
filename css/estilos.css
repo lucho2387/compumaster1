@@ -2371,6 +2371,23 @@ a {
   }
 }
 
+@media only screen and (max-width: 1045px) and (min-width: 877px) {
+  
+  #iframe .video1 iframe {
+    position: relative;
+    left: -100px;
+    top: -100px;
+  }
+  
+  #iframe .parrafoSecundario {
+    position: relative;
+    left: -680px;
+    top: 400px;
+    margin-bottom: 100px;
+    width: 600px;
+  }
+}
+
 h2, .h2 {
   text-align: center;
   font-size: 35px;
